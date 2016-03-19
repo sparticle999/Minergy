@@ -1,0 +1,69 @@
+#background{
+	background-color: lightblue; /*RGB:173-216-230*/
+	height: 100%;
+	width: 100%;
+}
+
+#oreButton{
+	background: url(http://www.pixelpapercraft.com/files/1343224487232-small.png);
+	height: 150px;
+	width: 143px;
+	position: absolute;
+	margin-left: 550px;
+	
+
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+#shopTitle{
+	background: url(http://img.ctrlv.in/img/16/02/24/56ce272fe517e.png);
+	height: 131px;
+    width: 800px;
+}
+
+#title{
+	text-align:center;
+	margin-left:50%;
+	position: absolute;
+}
+
+#opc{
+	position: absolute;
+	text-align: center;
+	margin-top: 150px;
+	margin-left: 540px;
+}
+
+#ironNum{
+	color: #808080;
+}
+#goldNum{
+	color: #D4AF37;
+}
+#copperNum{
+	color: #cd7f32;
+}
+#tinNum{
+	color: darkgrey;
+}
+#lithiumNum{
+	color: #A9A9A9;
+}
+#diamondNum{
+	color: blue;
+}
+#moneyNum{
+	color: green;
+}
+#energyNum{
+	color: #b3b300;
+}
+.button{
+	background-color: orange;
+}
+.sellButton{
+	background-color: gold;
+}
