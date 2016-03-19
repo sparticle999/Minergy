@@ -2,6 +2,8 @@
 
 Developed by sparticle999
 
+[Game Link](http://sparticle999.github.io/OreMiner/)
+
 A small project for fun - an attempt at an incremental game
 
 Suggestions and pull requests greatly appreciated
@@ -20,7 +22,7 @@ Thanks for playing
 #Contributors
 
 - Sparticle999(Founder)
-- [Your Name Here](What You Helped With)
+- (Your Name Here)(What You Helped With)
 -
 
 #Changelog
