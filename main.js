@@ -115,15 +115,15 @@ function sellAll(){
 function upgradePick(){
 	if(money > pickCost){
 		money = money - pickCost;
-		if(orePerClick > 63){
-		    orePerClick = orePerClick + 64;
+		if(orePerClick > 31){
+		    orePerClick = orePerClick + 32;
 		}
-		if(orePerClick < 33){
+		if(orePerClick < 17){
 		    orePerClick = orePerClick * 2;
 		}
 		pickCost = pickCost * 2;
 		document.getElementById("orePerClick").innerHTML = orePerClick;
-        document.getElementById("pickCost").innerHTML = pickCost;
+		document.getElementById("pickCost").innerHTML = pickCost;
 		document.getElementById("money").innerHTML = money;
 	}
 }
