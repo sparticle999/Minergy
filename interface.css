@@ -9,7 +9,7 @@
 }
 
 #oreButton{
-	background: url(http://img.ctrlv.in/img/16/03/19/56ed918b6200a.png);
+	background: url(http://img.ctrlv.in/img/16/03/19/56eda04e4bb72.png);
 	height: 150px;
 	width: 150px;
 	position: absolute;
@@ -67,7 +67,7 @@ a:hover {
 	color: #A9A9A9;
 }
 #diamondNum{
-	color: blue;
+	color: lightblue;
 }
 #moneyNum{
 	color: green;
