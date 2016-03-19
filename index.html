@@ -7,9 +7,9 @@
 </head>
 <body>
     <div id="background">
-    	<h1 id="GameTitle">OreMiner</h1>
+    	<h1 id="GameTitle" class="whiteText">OreMiner</h1>
         <a onclick="gainOre()" id="oreButton"></a>
-        <h4 id="opc">You will gain <span id="orePerClick">1</span> Ore per click!</h4>
+        <h4 id="opc" class="whiteText">You will gain <span id="orePerClick">1</span> Ore per click!</h4>
         <h3 id="stats">
             <span id="ironNum">Iron: <span id="iron">0</span></span>
             <br />
@@ -27,7 +27,7 @@
         <br />
         <button id="sellOre" class="sellButton" onclick="sellAll()">Click Here to sell all your Ore!</button>
         <br />
-        <h3 id="stats2">
+        <h3 id="stats2" class="whiteText">
             <br />
             <span id="moneyNum">Money: <span id="money">0</span></span>
             <br />
@@ -40,7 +40,7 @@
         </h3>
         <br />
         <div id="shop">
-            <div id="shopTitle"></div>
+            <div id="shopTitle" class="whiteText"></div>
                 <button id="upgradePick" class="button" onclick="upgradePick()">Increase Ore per Click! Cost: <span id="pickCost">500</span></button> Doubles until 32, then adds 16 per upgrade
                 <br />
                 <button id="upgradeGen" class="button" onclick="upgradeGen()">Upgrade the Energy Generator! Cost: <span id="genCost">5000</span></button> 2 Energy per Level per Second
