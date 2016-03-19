@@ -27,22 +27,22 @@ function refreshStats(){
 function gainOre(){
 	oreType = Math.floor(Math.random() * 100);
 	if(oreType >= 95){
-		diamond = diamond + orePerClick;
+		diamond += orePerClick;
 	}
 	if(oreType >= 76 && oreType < 95){
-		iron = iron + orePerClick;
+		iron += orePerClick;
 	}
 	if(oreType < 76 && oreType >= 57){
-		gold = gold + orePerClick;
+		gold += orePerClick;
 	}
 	if(oreType < 57 && oreType >= 38){
-		copper = copper + orePerClick;
+		copper += orePerClick;
 	}
 	if(oreType < 38 && oreType >= 19){
-		tin = tin + orePerClick;
+		tin += orePerClick;
 	}
     if(oreType < 19){
-		lithium = lithium + orePerClick;
+		lithium += orePerClick;
 	}
 	refreshStats();
 }
@@ -52,22 +52,22 @@ function pulseMine(){
 		energy = energy - (pulseLevel * 4);
 	    oreType2 = Math.floor(Math.random() * 100);
 	    if(oreType2 >= 95){
-		    diamond = diamond + (pulseLevel * 8);
+		    diamond += (pulseLevel * 8);
     	}
     	if(oreType2 >= 76 && oreType2 < 95){
-    		iron = iron + (pulseLevel * 8);
+    		iron += (pulseLevel * 8);
     	}
     	if(oreType2 < 76 && oreType2 >= 57){
-			gold = gold + (pulseLevel * 8);
+			gold += (pulseLevel * 8);
 		}
 		if(oreType2 < 57 && oreType2 >= 38){
-			copper = copper + (pulseLevel * 8);
+			copper += (pulseLevel * 8);
 		}
 		if(oreType2 < 38 && oreType2 >= 19){
-			tin = tin + (pulseLevel * 8);
+			tin += (pulseLevel * 8);
 		}
 		if(oreType2 < 19){
-			lithium = lithium + (pulseLevel * 8);
+			lithium += (pulseLevel * 8);
 		}
 		refreshStats();
 	}
@@ -81,28 +81,28 @@ function sellAll(){
 	lithiumNum = lithium;
 	diamondNum = diamond;
 	for (a = 0; a < ironNum; a++){
-		iron = iron - 1;
-		money = money + ironPrice;
+		iron -= 1;
+		money += ironPrice;
 	}
 	for (b = 0; b < goldNum; b++){
-		gold = gold - 1;
-		money = money + goldPrice;
+		gold -= 1;
+		money += goldPrice;
 	}
 	for (c = 0; c < copperNum; c++){
-		copper = copper - 1;
-		money = money + copperPrice;
+		copper -= 1;
+		money += copperPrice;
 	}
 	for (d = 0; d < tinNum; d++){
-		tin = tin - 1;
-		money = money + tinPrice;
+		tin -= 1;
+		money += tinPrice;
 	}
 	for (e = 0; e < lithiumNum; e++){
-		lithium = lithium - 1;
-		money = money + lithiumPrice;
+		lithium -= 1;
+		money += lithiumPrice;
 	}
 	for (f = 0; f < diamondNum; f++){
-		diamond = diamond - 1;
-		money = money + diamondPrice;
+		diamond -= 1;
+		money += diamondPrice;
 	}
 	ironNum = 0;
 	goldNum = 0;
@@ -114,14 +114,14 @@ function sellAll(){
 }
 function upgradePick(){
 	if(money > pickCost){
-		money = money - pickCost;
+		money -= pickCost;
 		if(orePerClick > 31){
 		    orePerClick = orePerClick + 16;
 		}
 		if(orePerClick < 17){
 		    orePerClick = orePerClick * 2;
 		}
-		pickCost = pickCost * 2;
+		pickCost *= 2;
 		document.getElementById("orePerClick").innerHTML = orePerClick;
 		document.getElementById("pickCost").innerHTML = pickCost;
 		document.getElementById("money").innerHTML = money;
@@ -130,8 +130,8 @@ function upgradePick(){
 
 function upgradeGen(){
 	if(money > genCost){
-		money = money - genCost;
-		genLevel = genLevel + 1;
+		money -= genCost;
+		genLevel += 1;
 		genCost = Math.floor(genCost * 1.5);
 		document.getElementById("genLevel").innerHTML = genLevel;
 		document.getElementById("genCost").innerHTML = genCost;
@@ -141,8 +141,8 @@ function upgradeGen(){
 
 function upgradeGen2(){
 	if(money > gen2Cost){
-		money = money - gen2Cost;
-		gen2Level = gen2Level + 1;
+		money -= gen2Cost;
+		gen2Level += 1;
 		gen2Cost = Math.floor(gen2Cost * 1.5);
 		document.getElementById("gen2Level").innerHTML = gen2Level;
 		document.getElementById("gen2Cost").innerHTML = gen2Cost;
@@ -152,8 +152,8 @@ function upgradeGen2(){
 
 function upgradePulse(){
 	if(money > pulseCost){
-		money = money - pulseCost;
-		pulseLevel = pulseLevel + 1;
+		money -= pulseCost;
+		pulseLevel += 1;
 		pulseCost = Math.floor(pulseCost * 1.5);
 		document.getElementById("pulseLevel").innerHTML = pulseLevel;
 		document.getElementById("pulseCost").innerHTML = pulseCost;
@@ -163,8 +163,8 @@ function upgradePulse(){
 
 function upgradePulse2(){
 	if(money > pulse2Cost){
-		money = money - pulse2Cost;
-		pulse2Level = pulse2Level + 1;
+		money -= pulse2Cost;
+		pulse2Level += 1;
 		pulse2Cost = Math.floor(pulse2Cost * 1.5);
 		document.getElementById("pulse2Level").innerHTML = pulse2Level;
 		document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
@@ -173,34 +173,34 @@ function upgradePulse2(){
 }
 
 function getEnergy(){
-	energy = energy + (genLevel * 2);
-	energy = energy + (gen2Level * 16);
+	energy += genLevel * 2;
+	energy += gen2Level * 16;
 	refreshStats();
 }
 
 function pulseMine2(){
 	if(energy > (pulseLevel * 28)){
-		energy = energy - (pulse2Level * 28);
+		energy -= pulse2Level * 28;
 	    oreType2 = Math.floor(Math.random() * 100);
 	    if(oreType2 >= 95){
-		    diamond = diamond + (pulse2Level * 64);
+		    diamond += (pulse2Level * 64);
     	}
     	if(oreType2 >= 76 && oreType2 < 95){
-    		iron = iron + (pulse2Level * 64);
+    		iron += (pulse2Level * 64);
     	}
     	if(oreType2 < 76 && oreType2 >= 57){
-			gold = gold + (pulse2Level * 64);
-		}
-		if(oreType2 < 57 && oreType2 >= 38){
-			copper = copper + (pulse2Level * 64);
-		}
-		if(oreType2 < 38 && oreType2 >= 19){
-			tin = tin + (pulse2Level * 64);
-		}
-		if(oreType2 < 19){
-			lithium = lithium + (pulse2Level * 64);
-		}
-		refreshStats();
+		gold += (pulse2Level * 64);
+	}
+	if(oreType2 < 57 && oreType2 >= 38){
+		copper += (pulse2Level * 64);
+	}
+	if(oreType2 < 38 && oreType2 >= 19){
+		tin += (pulse2Level * 64);
+	}
+	if(oreType2 < 19){
+		lithium += (pulse2Level * 64);
+	}
+	refreshStats();
 	}
 }
 
