@@ -14,6 +14,8 @@ Thanks for playing
 
 alpha 0.2
 - Posted to GitHub
+- Transfered all data onto GitHub
+- Edited ReadMe
 
 alpha 0.1
 - Created basic game
