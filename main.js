@@ -116,7 +116,7 @@ function upgradePick(){
 	if(money > pickCost){
 		money = money - pickCost;
 		if(orePerClick > 31){
-		    orePerClick = orePerClick + 32;
+		    orePerClick = orePerClick + 16;
 		}
 		if(orePerClick < 17){
 		    orePerClick = orePerClick * 2;
