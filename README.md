@@ -12,6 +12,10 @@ Thanks for playing
 
 #Changelog
 
+alpha 0.3
+- Visual Overhaul
+- Added Win Game Button
+
 alpha 0.2
 - Posted to GitHub
 - Transfered all data onto GitHub
