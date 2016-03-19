@@ -4,6 +4,8 @@ Developed by sparticle999
 
 [Game Link](http://sparticle999.github.io/OreMiner/)
 
+[Reddit Link](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
+
 A small project for fun - an attempt at an incremental game
 
 Suggestions and pull requests greatly appreciated
