@@ -10,6 +10,13 @@ If there are any errors or places where I could be more compact please say so
 
 Thanks for playing
 
+#To Do List
+
+- Change Chances Of Finding Certain Ores
+- Rebalance Costs And Outputs
+- Make Game Progression Harder
+- Add more Gameplay
+
 #Changelog
 
 alpha 0.3
