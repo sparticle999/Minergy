@@ -22,8 +22,7 @@ Thanks for playing
 #Contributors
 
 - Sparticle999(Founder)
-- a(Your Name Here)(What You Helped With)
--
+- Your Name Here (What You Helped With)
 
 #Changelog
 
