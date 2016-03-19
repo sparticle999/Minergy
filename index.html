@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+	<script type="text/javascript" src="main.js"></script>
+	<title>Ore Miner!</title>
+</head>
+<body>
+    <div id="background">
+        <a onclick="gainOre()" id="oreButton"></a>
+        <h4 id="opc">You will gain <span id="orePerClick">1</span> Ore per click!</h4>
+        <h3 id="stats">
+            <span id="ironNum">Iron: <span id="iron">0</span></span>
+            <br />
+            <span id="goldNum">Gold: <span id="gold">0</span></span>
+            <br />
+            <span id="copperNum">Copper: <span id="copper">0</span></span>
+            <br />
+            <span id="tinNum">Tin: <span id="tin">0</span></span>
+            <br />
+            <span id="lithiumNum">Lithium: <span id="lithium">0</span></span>
+            <br />
+            <span id="diamondNum">DIAMONDS!!! <span id="diamond">0</span></span>
+            <br />
+        </h3>
+        <br />
+        <button id="sellOre" class="sellButton" onclick="sellAll()">Click Here to sell all your Ore!</button>
+        <br />
+        <h3 id="stats2">
+            <br />
+            <span id="moneyNum">Money: <span id="money">0</span></span>
+            <br />
+            <span id="energyNum">Energy: <span id="energy">0</span></span>
+            <br />
+            Energy Generator Level: <span id="genLevel">0</span>, Energy Collector Field Level: <span id="gen2Level">0</span>
+            <br />
+            Pulse Miner Level: <span id="pulseLevel">0</span>, Pulse Miner V2 Level: <span id="pulse2Level">0</span>
+            <br />
+        </h3>
+        <br />
+        <div id="shop">
+            <div id="shopTitle"></div>
+                <button id="upgradePick" class="button" onclick="upgradePick()">Increase Ore per Click! Cost: <span id="pickCost">500</span></button> Doubles until 128, then adds 64 per upgrade
+                <br />
+                <button id="upgradeGen" class="button" onclick="upgradeGen()">Upgrade the Energy Generator! Cost: <span id="genCost">5000</span></button> 2 Energy per Level per Second
+                <br />
+                <button id="upgradePulse" class="button" onclick="upgradePulse()">Upgrade the Pulse Miner! Mines without you clicking! Cost: <span id="pulseCost">5000</span></button> 4 Energy Upkeep per Level, 8 Ore per Level
+                <br />
+                <button id="upgradeGen2" class="button" onclick="upgradeGen2()">Upgrade Energy Collector Field! Cost: <span id="gen2Cost">100000</span></button> 16 Energy per Level per Second
+                <br />
+                <button id="upgradePulse2" class="button" onclick="upgradePulse2()">Upgrade Pulse Miner V2! Mines 8 times faster than V1 and is more efficient! Cost: <span id="pulse2Cost">100000</span></button> 28 Energy Upkeep per Level, 64 Ore per Level
+            </div>
+        </div>
+</body>
+</html>
