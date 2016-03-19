@@ -1,7 +1,11 @@
 #background{
-	background-color: lightblue; /*RGB:173-216-230*/
+	background-color: #104E8B; /*RGB:173-216-230*/
 	height: 100%;
 	width: 100%;
+}
+
+.whiteText{
+	color:white;
 }
 
 #oreButton{
@@ -44,6 +48,8 @@ a:hover {
 	margin-top: 150px;
 	margin-left: 540px;
 }
+
+
 
 #ironNum{
 	color: #808080;
