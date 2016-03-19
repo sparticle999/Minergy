@@ -17,6 +17,12 @@ Thanks for playing
 - Make Game Progression Harder
 - Add more Gameplay
 
+#Contributors
+
+- Sparticle999(Founder)
+- [Your Name Here](What You Helped With)
+-
+
 #Changelog
 
 alpha 0.3
