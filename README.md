@@ -1,4 +1,4 @@
-# OreMiner (alpha 0.4)
+# OreMiner (alpha 0.3)
 
 Developed by sparticle999
 
@@ -25,10 +25,6 @@ Thanks for playing
 - Your Name Here (What You Helped With)
 
 #Changelog
-
-alpha 0.4
-- 
-- 
 
 alpha 0.3
 - Visual Overhaul
