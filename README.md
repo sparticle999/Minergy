@@ -1,4 +1,4 @@
-# Minergy (alpha 0.3)
+# Minergy (alpha 0.4)
 
 Developed by sparticle999
 
@@ -28,6 +28,9 @@ Thanks for playing
 - Your Name Here (What You Helped With)
 
 #Changelog
+
+alpha 0.4
+- Changed name (by OrbitalFacePalm9001)
 
 alpha 0.3
 - Visual Overhaul
