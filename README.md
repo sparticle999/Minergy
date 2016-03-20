@@ -2,7 +2,7 @@
 
 Developed by sparticle999
 
-[Game Link](http://sparticle999.github.io/OreMiner/)
+[Game Link](http://sparticle999.github.io/Minergy/)
 
 [Reddit Link](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
 
