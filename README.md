@@ -1,4 +1,4 @@
-# OreMiner (alpha 0.3)
+# Minergy (alpha 0.3)
 
 Developed by sparticle999
 
