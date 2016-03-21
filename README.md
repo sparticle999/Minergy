@@ -1,8 +1,8 @@
-# OreMiner (alpha 0.3)
+# Minergy (alpha 0.4)
 
 Developed by sparticle999
 
-[Game Link](http://sparticle999.github.io/OreMiner/)
+[Game Link](http://sparticle999.github.io/Minergy/)
 
 [Reddit Link](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
 
@@ -24,9 +24,14 @@ Thanks for playing
 #Contributors
 
 - Sparticle999 (Founder)
+- OrbitalFacePalm9001 (Name Creation)
 - Your Name Here (What You Helped With)
 
 #Changelog
+
+alpha 0.4
+- Changed name (by OrbitalFacePalm9001)
+- Fixed Bugs
 
 alpha 0.3
 - Visual Overhaul
