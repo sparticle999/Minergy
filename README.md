@@ -30,6 +30,10 @@ Thanks for playing
 
 #Changelog
 
+alpha 0.5
+- Changed energy mechanics
+- Changed pulse mining mechanichs
+
 alpha 0.4
 - Changed name (by OrbitalFacePalm9001)
 - Fixed Bugs
