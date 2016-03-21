@@ -1,4 +1,4 @@
-# Minergy (alpha 0.4)
+# Minergy (alpha 0.5)
 
 Developed by sparticle999
 
@@ -24,6 +24,7 @@ Thanks for playing
 #Contributors
 
 - Sparticle999 (Founder)
+- HazzaLaw (~~Professional Gineau Pig~~ Beta Tester)
 - OrbitalFacePalm9001 (Name Creation)
 - Your Name Here (What You Helped With)
 
