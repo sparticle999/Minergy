@@ -179,7 +179,7 @@ function getEnergy(){
 }
 
 function pulseMine2(){
-	if(energy > (pulseLevel2 * 64) && pulseLevel2 > 0){
+	if(energy > (pulse2Level * 64) && pulse2Level > 0){
 		energy -= pulse2Level * 64;
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
