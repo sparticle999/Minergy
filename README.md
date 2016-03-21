@@ -24,6 +24,7 @@ Thanks for playing
 #Contributors
 
 - Sparticle999 (Founder)
+- HazzaLaw (~~professional gineau pig~~)
 - OrbitalFacePalm9001 (Name Creation)
 - Your Name Here (What You Helped With)
 
