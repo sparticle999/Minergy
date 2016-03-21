@@ -16,10 +16,7 @@ Thanks for playing
 
 #To Do List
 
-- Change Chances Of Finding Certain Ores
-- Rebalance Costs And Outputs
-- Make Game Progression Harder
-- Add more Gameplay
+See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
 
 #Contributors
 
