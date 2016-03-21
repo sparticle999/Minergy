@@ -48,7 +48,7 @@ function gainOre(){
 }
 
 function pulseMine(){
-	if(energy > (pulseLevel * 8)){
+	if(energy > (pulseLevel * 8) && pulseLevel > 0){
 		energy = energy - (pulseLevel * 8);
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
@@ -179,7 +179,7 @@ function getEnergy(){
 }
 
 function pulseMine2(){
-	if(energy > (pulseLevel * 64)){
+	if(energy > (pulseLevel2 * 64) && pulseLevel2 > 0){
 		energy -= pulse2Level * 64;
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
