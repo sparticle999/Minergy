@@ -188,7 +188,7 @@ function pulseMine2(){
 		if(oreType2 < 96 && oreType2 >= 86){
 			gold += 128;
 		}
-		if(oreType2 < 86 && oreTyp2e >= 71){
+		if(oreType2 < 86 && oreType2 >= 71){
 			lithium += 128;
 		}
 		if(oreType2 < 71 && oreType2 >= 51){
