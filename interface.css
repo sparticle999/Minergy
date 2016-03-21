@@ -75,8 +75,8 @@ a:hover {
 #energyNum{
 	color: #b3b300;
 }
-#sellOre{
-	background: url(http://www.bizquest.com/_img/icon-dollar.png);
+.sellButton{
+	background-color: gold;
 }
 .button{
 	background-color: orange;
