@@ -31,6 +31,7 @@ Thanks for playing
 
 alpha 0.4
 - Changed name (by OrbitalFacePalm9001)
+- Fixed Bugs
 
 alpha 0.3
 - Visual Overhaul
