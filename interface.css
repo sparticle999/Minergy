@@ -86,6 +86,7 @@ a:hover {
 }
 .button{
 	background-color: orange;
+	color: white;
 }
 .sellButton{
 	background-color: gold;
