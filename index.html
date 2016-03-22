@@ -3,10 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="interface.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<title>Minergy!</title>
 	<link rel="shortcut icon" type="image/png" href="http://vignette4.wikia.nocookie.net/ztreasureisle/images/d/da/GoldOre_Sandstone-icon.png/revision/latest?cb=20100906203517"/>
@@ -16,22 +13,20 @@
     	<h1 id="GameTitle" class="whiteText">Minergy!</h1>
         <a onclick="gainOre()" id="oreButton"></a>
         <h4 id="opc" class="whiteText">You will gain <span id="orePerClick">1</span> Ore per click!</h4>
-        <div class="containerfluid">
-        	<h3 id="stats">
-			<span id="copperNum">Copper: <span id="copper">0</span></span>
-			<br />
-			<span id="tinNum">Tin: <span id="tin">0</span></span>
-			<br />
-			<span id="ironNum">Iron: <span id="iron">0</span></span>
-			<br />
-			<span id="lithiumNum">Lithium: <span id="lithium">0</span></span>
-			<br />
-			<span id="goldNum">Gold: <span id="gold">0</span></span>
-			<br />
-			<span id="diamondNum">Diamond: <span id="diamond">0</span></span>
-			<br />
-		</h3>
-        </div>
+        <h3 id="stats">
+		<span id="copperNum">Copper: <span id="copper">0</span></span>
+		<br />
+		<span id="tinNum">Tin: <span id="tin">0</span></span>
+		<br />
+		<span id="ironNum">Iron: <span id="iron">0</span></span>
+		<br />
+		<span id="lithiumNum">Lithium: <span id="lithium">0</span></span>
+		<br />
+		<span id="goldNum">Gold: <span id="gold">0</span></span>
+		<br />
+		<span id="diamondNum">Diamond: <span id="diamond">0</span></span>
+		<br />
+	</h3>
         <br />
         <button id="sellOre" class="sellButton" onclick="sellAll()">Click Here to sell all your Ore!</button>
         <br />
