@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="interface.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<title>Minergy!</title>
 	<link rel="shortcut icon" type="image/png" href="http://vignette4.wikia.nocookie.net/ztreasureisle/images/d/da/GoldOre_Sandstone-icon.png/revision/latest?cb=20100906203517"/>
 </head>
 <body>
-    <div id="background">
+    <div class="containerfluid" id="background">
     	<h1 id="GameTitle" class="whiteText">Minergy!</h1>
         <a onclick="gainOre()" id="oreButton"></a>
         <h4 id="opc" class="whiteText">You will gain <span id="orePerClick">1</span> Ore per click!</h4>
-        <h3 id="stats">
-            <span id="ironNum">Iron: <span id="iron">0</span></span>
-            <br />
-            <span id="goldNum">Gold: <span id="gold">0</span></span>
-            <br />
-            <span id="copperNum">Copper: <span id="copper">0</span></span>
-            <br />
-            <span id="tinNum">Tin: <span id="tin">0</span></span>
-            <br />
-            <span id="lithiumNum">Lithium: <span id="lithium">0</span></span>
-            <br />
-            <span id="diamondNum">Diamond: <span id="diamond">0</span></span>
-            <br />
-        </h3>
+        <div class="containerfluid">
+        	<h3 id="stats">
+			<span id="copperNum">Copper: <span id="copper">0</span></span>
+			<br />
+			<span id="tinNum">Tin: <span id="tin">0</span></span>
+			<br />
+			<span id="ironNum">Iron: <span id="iron">0</span></span>
+			<br />
+			<span id="lithiumNum">Lithium: <span id="lithium">0</span></span>
+			<br />
+			<span id="goldNum">Gold: <span id="gold">0</span></span>
+			<br />
+			<span id="diamondNum">Diamond: <span id="diamond">0</span></span>
+			<br />
+		</h3>
+        </div>
         <br />
         <button id="sellOre" class="sellButton" onclick="sellAll()">Click Here to sell all your Ore!</button>
         <br />
@@ -44,13 +51,13 @@
             <div id="shopTitle"></div>
                 <button id="upgradePick" class="button" onclick="upgradePick()">Increase Ore per Click! Cost: <span id="pickCost">500</span></button> Doubles until 32, then adds 16 per upgrade
                 <br />
-                <button id="upgradeGen" class="button" onclick="upgradeGen()">Upgrade the Energy Generator! Cost: <span id="genCost">5000</span></button> 2 Energy per Level per Second
+                <button id="upgradeGen" class="button" onclick="upgradeGen()">Upgrade the Energy Generator! Cost: <span id="genCost">5000</span></button> 8 Energy per Level per Second
                 <br />
-                <button id="upgradePulse" class="button" onclick="upgradePulse()">Upgrade the Pulse Miner! Mines without you clicking! Cost: <span id="pulseCost">5000</span></button> 4 Energy Upkeep per Level, 8 Ore per Level
+                <button id="upgradePulse" class="button" onclick="upgradePulse()">Upgrade the Pulse Miner! Mines without you clicking! Cost: <span id="pulseCost">5000</span></button> 8 Energy Upkeep per Level, 16 Ore per Level
                 <br />
-                <button id="upgradeGen2" class="button" onclick="upgradeGen2()">Upgrade Energy Collector Field! Cost: <span id="gen2Cost">100000</span></button> 16 Energy per Level per Second
+                <button id="upgradeGen2" class="button" onclick="upgradeGen2()">Upgrade Energy Collector Field! Cost: <span id="gen2Cost">100000</span></button> 32 Energy per Level per Second
                 <br />
-                <button id="upgradePulse2" class="button" onclick="upgradePulse2()">Upgrade Pulse Miner V2! Mines 8 times faster than V1 and is more efficient! Cost: <span id="pulse2Cost">100000</span></button> 28 Energy Upkeep per Level, 64 Ore per Level
+                <button id="upgradePulse2" class="button" onclick="upgradePulse2()">Upgrade Pulse Miner V2! Mines 8 times faster than V1 and is more efficient! Cost: <span id="pulse2Cost">100000</span></button> 64 Energy Upkeep per Level, 128 Ore per Level
                 <br />
                 <button id="winGame" class="button" onclick="winGame()">Click To Win The Game!!! Cost: 10000000 (10 Million)</button>
                 <br />

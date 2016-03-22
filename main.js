@@ -26,48 +26,48 @@ function refreshStats(){
 
 function gainOre(){
 	oreType = Math.floor(Math.random() * 100);
-	if(oreType >= 95){
+	if(oreType >= 96){
 		diamond += orePerClick;
 	}
-	if(oreType >= 76 && oreType < 95){
-		iron += orePerClick;
-	}
-	if(oreType < 76 && oreType >= 57){
+	if(oreType < 96 && oreType >= 86){
 		gold += orePerClick;
 	}
-	if(oreType < 57 && oreType >= 38){
-		copper += orePerClick;
+	if(oreType < 86 && oreType >= 71){
+		lithium += orePerClick;
 	}
-	if(oreType < 38 && oreType >= 19){
+	if(oreType < 71 && oreType >= 51){
+		iron += orePerClick;
+	}
+	if(oreType < 51 && oreType >= 31){
 		tin += orePerClick;
 	}
-    if(oreType < 19){
-		lithium += orePerClick;
+	if(oreType < 31){
+		copper += orePerClick;
 	}
 	refreshStats();
 }
 
 function pulseMine(){
-	if(energy > (pulseLevel * 4)){
-		energy = energy - (pulseLevel * 4);
-	    oreType2 = Math.floor(Math.random() * 100);
-	    if(oreType2 >= 95){
-		    diamond += (pulseLevel * 8);
-    	}
-    	if(oreType2 >= 76 && oreType2 < 95){
-    		iron += (pulseLevel * 8);
-    	}
-    	if(oreType2 < 76 && oreType2 >= 57){
-			gold += (pulseLevel * 8);
+	if(energy > (pulseLevel * 8) && pulseLevel > 0){
+		energy = energy - (pulseLevel * 8);
+		oreType2 = Math.floor(Math.random() * 100);
+		if(oreType2 >= 96){
+		diamond += 16;
 		}
-		if(oreType2 < 57 && oreType2 >= 38){
-			copper += (pulseLevel * 8);
+		if(oreType2 < 96 && oreType2 >= 86){
+			gold += 16;
 		}
-		if(oreType2 < 38 && oreType2 >= 19){
-			tin += (pulseLevel * 8);
+		if(oreType2 < 86 && oreType2 >= 71){
+			lithium += 16;
 		}
-		if(oreType2 < 19){
-			lithium += (pulseLevel * 8);
+		if(oreType2 < 71 && oreType2 >= 51){
+			iron += 16;
+		}
+		if(oreType2 < 51 && oreType2 >= 31){
+		tin += 16;
+		}
+		if(oreType2 < 31){
+			copper += 16;
 		}
 		refreshStats();
 	}
@@ -173,34 +173,34 @@ function upgradePulse2(){
 }
 
 function getEnergy(){
-	energy += genLevel * 2;
-	energy += gen2Level * 16;
+	energy += genLevel * 8;
+	energy += gen2Level * 32;
 	refreshStats();
 }
 
 function pulseMine2(){
-	if(energy > (pulseLevel * 28)){
-		energy -= pulse2Level * 28;
-	    oreType2 = Math.floor(Math.random() * 100);
-	    if(oreType2 >= 95){
-		    diamond += (pulse2Level * 64);
-    	}
-    	if(oreType2 >= 76 && oreType2 < 95){
-    		iron += (pulse2Level * 64);
-    	}
-    	if(oreType2 < 76 && oreType2 >= 57){
-		gold += (pulse2Level * 64);
-	}
-	if(oreType2 < 57 && oreType2 >= 38){
-		copper += (pulse2Level * 64);
-	}
-	if(oreType2 < 38 && oreType2 >= 19){
-		tin += (pulse2Level * 64);
-	}
-	if(oreType2 < 19){
-		lithium += (pulse2Level * 64);
-	}
-	refreshStats();
+	if(energy > (pulse2Level * 64) && pulse2Level > 0){
+		energy -= pulse2Level * 64;
+		oreType2 = Math.floor(Math.random() * 100);
+		if(oreType2 >= 96){
+			diamond += 128;
+		}
+		if(oreType2 < 96 && oreType2 >= 86){
+			gold += 128;
+		}
+		if(oreType2 < 86 && oreType2 >= 71){
+			lithium += 128;
+		}
+		if(oreType2 < 71 && oreType2 >= 51){
+			iron += 128;
+		}
+		if(oreType2 < 51 && oreType2 >= 31){
+		tin += 128;
+		}
+		if(oreType2 < 31){
+			copper += 128;
+		}
+		refreshStats();
 	}
 }
 
