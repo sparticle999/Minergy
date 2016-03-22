@@ -1,4 +1,4 @@
-# Minergy (alpha 0.4)
+# Minergy (alpha 0.5)
 
 Developed by sparticle999
 
@@ -16,19 +16,20 @@ Thanks for playing
 
 #To Do List
 
-- Change Chances Of Finding Certain Ores
-- Rebalance Costs And Outputs
-- Make Game Progression Harder
-- Add more Gameplay
+See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
 
 #Contributors
 
 - Sparticle999 (Founder)
-- HazzaLaw (~~professional gineau pig~~)
+- HazzaLaw (~~Professional Gineau Pig~~ Beta Tester)
 - OrbitalFacePalm9001 (Name Creation)
 - Your Name Here (What You Helped With)
 
 #Changelog
+
+alpha 0.5
+- Changed energy mechanics
+- Changed pulse mining mechanichs
 
 alpha 0.4
 - Changed name (by OrbitalFacePalm9001)
