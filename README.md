@@ -27,6 +27,11 @@ See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/ore
 
 #Changelog
 
+alpha 0.6
+- Added Bootstrap Design
+- Changed Buttons
+- Added Navbar
+
 alpha 0.5
 - Changed energy mechanics
 - Changed pulse mining mechanichs
@@ -36,7 +41,7 @@ alpha 0.4
 - Fixed Bugs
 
 alpha 0.3
-- Visual Overhaul
+- Changed Background Colour
 - Added Win Game Button
 
 alpha 0.2
