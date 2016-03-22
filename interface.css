@@ -8,8 +8,8 @@ body {
 }
 
 #background{
-	background-color: #104E8B; /*RGB:173-216-230*/
-	height: 100%;
+	background-color: #104E8B;
+	min-height: 100%;
 	width: 100%;
 }
 
@@ -23,16 +23,9 @@ body {
 	width: 150px;
 	position: absolute;
 	margin-left: 550px;
+	margin-top: 50px;
 	
 
-}
-
-.rainbow {
-  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 a:hover {
@@ -45,16 +38,10 @@ a:hover {
     width: 800px;
 }
 
-#title{
-	text-align:center;
-	margin-left:50%;
-	position: absolute;
-}
-
 #opc{
 	position: absolute;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 200px;
 	margin-left: 540px;
 }
 
@@ -86,6 +73,7 @@ a:hover {
 }
 .button{
 	background-color: orange;
+	color: black;
 }
 .sellButton{
 	background-color: gold;
