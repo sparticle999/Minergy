@@ -1,4 +1,4 @@
-# Minergy (alpha 0.5)
+# Minergy (alpha 0.6)
 
 Developed by sparticle999
 
