@@ -30,8 +30,10 @@ function activeMain() {
     document.getElementById("statsTab").style.color = "#222222";
     document.getElementById("settingsTab").style.color = "#222222";
     document.getElementById("shopTab").style.color = "#222222";
-    document.getElementById("main").className += " active"
-
+    document.getElementById("main").className = "active";
+    document.getElementById("shop").className = "";
+    document.getElementById("stats").className = "";
+    document.getElementById("settings").className = "";
 }
 
 function activeStats() {
@@ -40,6 +42,10 @@ function activeStats() {
     document.getElementById("statsTab").style.color = "#dddddd";
     document.getElementById("settingsTab").style.color = "#222222";
     document.getElementById("shopTab").style.color = "#222222";
+    document.getElementById("main").className = "";
+    document.getElementById("shop").className = "";
+    document.getElementById("stats").className = "active";
+    document.getElementById("settings").className = "";
 
 }
 
@@ -49,7 +55,10 @@ function activeSettings() {
     document.getElementById("statsTab").style.color = "#222222";
     document.getElementById("settingsTab").style.color = "#dddddd";
     document.getElementById("shopTab").style.color = "#222222";
-
+    document.getElementById("main").className = "";
+    document.getElementById("shop").className = "";
+    document.getElementById("stats").className = "";
+    document.getElementById("settings").className = "active";
 }
 
 function activeShop() {
@@ -58,7 +67,10 @@ function activeShop() {
     document.getElementById("statsTab").style.color = "#222222";
     document.getElementById("settingsTab").style.color = "#222222";
     document.getElementById("shopTab").style.color = "#ffffff";
-
+    document.getElementById("main").className = "";
+    document.getElementById("shop").className = "active";
+    document.getElementById("stats").className = "";
+    document.getElementById("settings").className = "";
 }
 
 function gainOre(){
