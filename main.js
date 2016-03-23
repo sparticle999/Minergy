@@ -30,6 +30,7 @@ function activeMain() {
     document.getElementById("statsTab").style.color = "#222222";
     document.getElementById("settingsTab").style.color = "#222222";
     document.getElementById("shopTab").style.color = "#222222";
+    document.getElementById("main").className += " active"
 
 }
 
