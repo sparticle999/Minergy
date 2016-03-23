@@ -21,7 +21,71 @@ function refreshStats(){
 	document.getElementById("lithium").innerHTML = lithium;
 	document.getElementById("diamond").innerHTML = diamond;
 	document.getElementById("energy").innerHTML = energy;
-    document.getElementById("money").innerHTML = money;
+	document.getElementById("money").innerHTML = money;
+}
+
+function activeMain() {
+    "use strict";
+    document.getElementById("mainTab").style.backgroundColor = "#222222";
+    document.getElementById("statsTab").style.backgroundColor = "transparent";
+    document.getElementById("settingsTab").style.backgroundColor = "transparent";
+    document.getElementById("shopTab").style.backgroundColor = "transparent";
+    document.getElementById("mainTab").style.color = "#dddddd";
+    document.getElementById("statsTab").style.color = "#222222";
+    document.getElementById("settingsTab").style.color = "#222222";
+    document.getElementById("shopTab").style.color = "#222222";
+    document.getElementById("main").style.display = "block";
+    document.getElementById("stats").style.display = "none";
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("shop").style.display = "none";
+}
+
+function activeStats() {
+    "use strict";
+    document.getElementById("mainTab").style.backgroundColor = "transparent";
+    document.getElementById("statsTab").style.backgroundColor = "#222222";
+    document.getElementById("settingsTab").style.backgroundColor = "transparent";
+    document.getElementById("shopTab").style.backgroundColor = "transparent";
+    document.getElementById("mainTab").style.color = "#222222";
+    document.getElementById("statsTab").style.color = "#dddddd";
+    document.getElementById("settingsTab").style.color = "#222222";
+    document.getElementById("shopTab").style.color = "#222222";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("stats").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("shop").style.display = "none";
+}
+
+function activeSettings() {
+    "use strict";
+    document.getElementById("mainTab").style.backgroundColor = "transparent";
+    document.getElementById("statsTab").style.backgroundColor = "transparent";
+    document.getElementById("settingsTab").style.backgroundColor = "#222222";
+    document.getElementById("shopTab").style.backgroundColor = "transparent";
+    document.getElementById("mainTab").style.color = "#222222";
+    document.getElementById("statsTab").style.color = "#222222";
+    document.getElementById("settingsTab").style.color = "#dddddd";
+    document.getElementById("shopTab").style.color = "#222222";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("stats").style.display = "none";
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("shop").style.display = "none";
+}
+
+function activeShop() {
+    "use strict";
+    document.getElementById("mainTab").style.backgroundColor = "transparent";
+    document.getElementById("statsTab").style.backgroundColor = "transparent";
+    document.getElementById("settingsTab").style.backgroundColor = "transparent";
+    document.getElementById("shopTab").style.backgroundColor = "#222222";
+    document.getElementById("mainTab").style.color = "#222222";
+    document.getElementById("statsTab").style.color = "#222222";
+    document.getElementById("settingsTab").style.color = "#222222";
+    document.getElementById("shopTab").style.color = "#dddddd";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("stats").style.display = "none";
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("shop").style.display = "block";
 }
 
 function gainOre(){
