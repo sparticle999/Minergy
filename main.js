@@ -123,7 +123,7 @@ function load(){
 }
 
 function deleteSave(){
-	var delete = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box. );
+	var delete = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box.");
 	if(delete = "DELETE"){
 		localStorage.removeItem("save");
 		alert("Deleted Save");
