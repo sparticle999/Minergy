@@ -33,12 +33,6 @@ a:hover {
 	cursor:pointer;
 }
 
-#shopTitle{
-	background: url(http://img.ctrlv.in/img/16/03/19/56eda0deba56a.png);
-	height: 131px;
-    width: 800px;
-}
-
 #opc{
 	position: absolute;
 	text-align: center;
