@@ -128,7 +128,9 @@ function deleteSave(){
 		localStorage.removeItem("save");
 		alert("Deleted Save");
 	}
-	alert("Deletion Cancelled");
+	else{
+		alert("Deletion Cancelled");
+	}
 }
 
 function gainOre(){
