@@ -27,9 +27,9 @@ function refreshStats(){
 function activeMain() {
     "use strict";
     document.getElementById("mainTab").style.color = "#ffffff";
-    document.getElementById("statsTab").style.color = "transparent";
-    document.getElementById("settingsTab").style.color = "transparent";
-    document.getElementById("shopTab").style.color = "transparent";
+    document.getElementById("statsTab").style.color = "#414449";
+    document.getElementById("settingsTab").style.color = "#414449";
+    document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "active";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "";
@@ -38,10 +38,10 @@ function activeMain() {
 
 function activeStats() {
     "use strict";
-    document.getElementById("mainTab").style.color = "transparent";
+    document.getElementById("mainTab").style.color = "#414449";
     document.getElementById("statsTab").style.color = "#ffffff";
-    document.getElementById("settingsTab").style.color = "transparent";
-    document.getElementById("shopTab").style.color = "transparent";
+    document.getElementById("settingsTab").style.color = "#414449";
+    document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "active";
@@ -51,10 +51,10 @@ function activeStats() {
 
 function activeSettings() {
     "use strict";
-    document.getElementById("mainTab").style.color = "transparent";
-    document.getElementById("statsTab").style.color = "transparent";
+    document.getElementById("mainTab").style.color = "#414449";
+    document.getElementById("statsTab").style.color = "#414449";
     document.getElementById("settingsTab").style.color = "#ffffff";
-    document.getElementById("shopTab").style.color = "transparent";
+    document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "";
@@ -63,9 +63,9 @@ function activeSettings() {
 
 function activeShop() {
     "use strict";
-    document.getElementById("mainTab").style.color = "transparent";
-    document.getElementById("statsTab").style.color = "transparent";
-    document.getElementById("settingsTab").style.color = "transparent";
+    document.getElementById("mainTab").style.color = "#414449";
+    document.getElementById("statsTab").style.color = "#414449";
+    document.getElementById("settingsTab").style.color = "#414449";
     document.getElementById("shopTab").style.color = "#ffffff";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "active";
