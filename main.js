@@ -26,10 +26,7 @@ function refreshStats(){
 
 function activeMain() {
     "use strict";
-    document.getElementById("mainTab").style.backgroundColor = "#222222";
-    document.getElementById("statsTab").style.backgroundColor = "transparent";
-    document.getElementById("settingsTab").style.backgroundColor = "transparent";
-    document.getElementById("shopTab").style.backgroundColor = "transparent";
+
     document.getElementById("mainTab").style.color = "#dddddd";
     document.getElementById("statsTab").style.color = "#222222";
     document.getElementById("settingsTab").style.color = "#222222";
