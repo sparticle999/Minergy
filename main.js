@@ -90,6 +90,47 @@ function activeShop() {
     document.getElementById("settingsTab").style.display = none;
 }
 
+function save(){
+	var save = {
+		money: money,
+		energy: energy,
+		orePerClick: orePerClick,
+		pulseLevel: pulseLevel,
+		pulseCost: pulseCost,
+		pulse2Level: pulse2Level,
+		pulse2Cost: pulse2Cost,
+		genLevel: genLevel,
+		genCost: genCost,
+		gen2Level: gen2level,
+		gen2Cost: gen2Cost,
+	}
+	localStorage.setItem("save",JSON.stringify(save));
+}
+
+function load(){
+	var savegame = JSON.parse(localStorage.getItem("save"));
+	if (typeof savegame.money !== "undefined") money = savegame.money;
+	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
+	if (typeof savegame.orePerClick !== "undefined") orePerClick = savegame.orePerClick;
+	if (typeof savegame.pulseLevel !== "undefined") pulseLevel = savegame.pulseLevel;
+	if (typeof savegame.pulseCost !== "undefined") pulseCost = savegame.pulseCost;
+	if (typeof savegame.pulse2Level !== "undefined") pulse2Level = savegame.pulse2Level;
+	if (typeof savegame.pulse2Cost !== "undefined") pulse2Cost = savegame.pulse2Cost;
+	if (typeof savegame.genLevel !== "undefined") genLevel = savegame.genLevel;
+	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
+	if (typeof savegame.gen2level !== "undefined") gen2level = savegame.gen2level;
+	if (typeof savegame.gen2Cost !== "undefined") gen2Cost = savegame.gen2Cost;
+}
+
+function deleteSave(){
+	var delete = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box. );
+	if(delete = "DELETE"){
+		localStorage.removeItem("save");
+		alert("Deleted Save");
+	}
+	alert("Deletion Cancelled");
+}
+
 function gainOre(){
 	oreType = Math.floor(Math.random() * 100);
 	if(oreType >= 96){
