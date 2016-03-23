@@ -120,6 +120,16 @@ function load(){
 	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
 	if (typeof savegame.gen2level !== "undefined") gen2level = savegame.gen2level;
 	if (typeof savegame.gen2Cost !== "undefined") gen2Cost = savegame.gen2Cost;
+	refreshStats();
+	document.getElementById("orePerClick").innerHTML = orePerClick;
+	document.getElementById("genLevel").innerHTML = genLevel;
+	document.getElementById("genCost").innerHTML = genCost;
+	document.getElementById("gen2Level").innerHTML = gen2Level;
+	document.getElementById("gen2Cost").innerHTML = gen2Cost;
+	document.getElementById("pulseLevel").innerHTML = pulseLevel;
+	document.getElementById("pulseCost").innerHTML = pulseCost;
+	document.getElementById("pulse2Level").innerHTML = pulse2Level;
+	document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
 }
 
 function deleteSave(){
