@@ -317,6 +317,28 @@ function upgradeGen2(){
 	}
 }
 
+function upgradeGen3(){
+	if(money > gen3Cost){
+		money -= gen3Cost;
+		gen3Level += 1;
+		gen3Cost = Math.floor(gen3Cost * 1.5);
+		document.getElementById("gen3Level").innerHTML = gen3Level;
+		document.getElementById("gen3Cost").innerHTML = gen3Cost;
+		document.getElementById("money").innerHTML = money;
+	}
+}
+
+function upgradeGen4(){
+	if(money > gen2Cost){
+		money -= gen4Cost;
+		gen4Level += 1;
+		gen4Cost = Math.floor(gen4Cost * 1.5);
+		document.getElementById("gen4Level").innerHTML = gen4Level;
+		document.getElementById("gen4Cost").innerHTML = gen4Cost;
+		document.getElementById("money").innerHTML = money;
+	}
+}
+
 function upgradePulse(){
 	if(money > pulseCost){
 		money -= pulseCost;
