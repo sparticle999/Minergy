@@ -35,7 +35,7 @@ function checkEnergyPositive(){
 	if(energyPerSec < 0){
 		document.getElementById("energyPerSec").style.color = "red";
 	}
-	if(energyPerSec = 0){
+	if(energyPerSec === 0){
 		document.getElementById("energyPerSec").style.color = "white";
 	}
 }
