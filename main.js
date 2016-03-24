@@ -103,7 +103,7 @@ function save(){
 		genCost: genCost,
 		gen2Level: gen2Level,
 		gen2Cost: gen2Cost,
-	}
+	};
 	localStorage.setItem("save",JSON.stringify(save));
 }
 
