@@ -1,4 +1,4 @@
-# Minergy (alpha 0.6)
+# Minergy (Beta 0.7)
 
 Developed by sparticle999
 
@@ -26,6 +26,9 @@ See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/ore
 - Your Name Here (What You Helped With)
 
 #Changelog
+
+Beta 0.7
+- Changed looks
 
 alpha 0.6
 - Added Bootstrap Design
