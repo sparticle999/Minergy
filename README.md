@@ -29,6 +29,7 @@ See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/ore
 
 Beta 0.7
 - Changed looks
+- Added Save Functionality
 
 alpha 0.6
 - Added Bootstrap Design
