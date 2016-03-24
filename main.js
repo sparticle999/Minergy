@@ -361,6 +361,28 @@ function upgradePulse2(){
 	}
 }
 
+function upgradePulse3(){
+	if(money > pulse3Cost){
+		money -= pulse3Cost;
+		pulse3Level += 1;
+		pulse3Cost = Math.floor(pulse3Cost * 1.5);
+		document.getElementById("pulse3Level").innerHTML = pulse3Level;
+		document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
+		document.getElementById("money").innerHTML = money;
+	}
+}
+
+function upgradePulse4(){
+	if(money > pulse4Cost){
+		money -= pulse4Cost;
+		pulse4Level += 1;
+		pulse4Cost = Math.floor(pulse4Cost * 1.5);
+		document.getElementById("pulse4Level").innerHTML = pulse4Level;
+		document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
+		document.getElementById("money").innerHTML = money;
+	}
+}
+
 function getEnergy(){
 	energy += genLevel * 8;
 	energy += gen2Level * 64;
@@ -395,6 +417,58 @@ function pulseMine2(){
 	}
 }
 
+function pulseMine3(){
+	if(energy > (pulse3Level * 512) && pulse3Level > 0){
+		energy -= pulse3Level * 512;
+		oreType2 = Math.floor(Math.random() * 100);
+		if(oreType2 >= 96){
+			diamond += (1024 * pulse2Level);
+		}
+		if(oreType2 < 96 && oreType2 >= 86){
+			gold += (1024 * pulse2Level);
+		}
+		if(oreType2 < 86 && oreType2 >= 71){
+			lithium += (1024 * pulse2Level);
+		}
+		if(oreType2 < 71 && oreType2 >= 51){
+			iron += (1024 * pulse2Level);
+		}
+		if(oreType2 < 51 && oreType2 >= 31){
+			tin += (1024 * pulse2Level);
+		}
+		if(oreType2 < 31){
+			copper += (1024 * pulse2Level);
+		}
+		refreshStats();
+	}
+}
+
+function pulseMine4(){
+	if(energy > (pulse4Level * 4096) && pulse4Level > 0){
+		energy -= pulse4Level * 4096;
+		oreType2 = Math.floor(Math.random() * 100);
+		if(oreType2 >= 96){
+			diamond += (8192 * pulse4Level);
+		}
+		if(oreType2 < 96 && oreType2 >= 86){
+			gold += (8192 * pulse4Level);
+		}
+		if(oreType2 < 86 && oreType2 >= 71){
+			lithium += (8192 * pulse4Level);
+		}
+		if(oreType2 < 71 && oreType2 >= 51){
+			iron += (8192 * pulse4Level);
+		}
+		if(oreType2 < 51 && oreType2 >= 31){
+			tin += (8192 * pulse4Level);
+		}
+		if(oreType2 < 31){
+			copper += (8192 * pulse4Level);
+		}
+		refreshStats();
+	}
+}
+
 function winGame(){
 	if (money >= 10000000){
 		money -= 10000000;
@@ -406,7 +480,9 @@ function winGame(){
 
 window.setInterval(function(){
 	getEnergy();
-    pulseMine();
+	pulseMine();
 	pulseMine2();
+	pulseMine3();
+	pulseMiner4();
 	refreshStats();
 }, 1000);
