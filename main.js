@@ -422,22 +422,22 @@ function pulseMine3(){
 		energy -= pulse3Level * 512;
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
-			diamond += (1024 * pulse2Level);
+			diamond += (1024 * pulse3Level);
 		}
 		if(oreType2 < 96 && oreType2 >= 86){
-			gold += (1024 * pulse2Level);
+			gold += (1024 * pulse3Level);
 		}
 		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += (1024 * pulse2Level);
+			lithium += (1024 * pulse3Level);
 		}
 		if(oreType2 < 71 && oreType2 >= 51){
-			iron += (1024 * pulse2Level);
+			iron += (1024 * pulse3Level);
 		}
 		if(oreType2 < 51 && oreType2 >= 31){
-			tin += (1024 * pulse2Level);
+			tin += (1024 * pulse3Level);
 		}
 		if(oreType2 < 31){
-			copper += (1024 * pulse2Level);
+			copper += (1024 * pulse3Level);
 		}
 		refreshStats();
 	}
