@@ -104,6 +104,7 @@ function save(){
 		genCost: genCost,
 		gen2Level: gen2Level,
 		gen2Cost: gen2Cost,
+		pickCost: pickCost,
 	};
 	localStorage.setItem("save",JSON.stringify(save));
 	alert("Save Successful!");
@@ -123,6 +124,7 @@ function load(){
 	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
 	if (typeof savegame.gen2level !== "undefined") gen2level = savegame.gen2level;
 	if (typeof savegame.gen2Cost !== "undefined") gen2Cost = savegame.gen2Cost;
+	if (typeof savegame.pickCost !== "undefined") pickCost = savegame.pickCost;
 	refreshStats();
 	document.getElementById("orePerClick").innerHTML = orePerClick;
 	document.getElementById("genLevel").innerHTML = genLevel;
@@ -133,6 +135,7 @@ function load(){
 	document.getElementById("pulseCost").innerHTML = pulseCost;
 	document.getElementById("pulse2Level").innerHTML = pulse2Level;
 	document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
+	document.getElementById("pickCost").innerHTML = pickCost;
 	alert("Load Successful!");
 }
 
