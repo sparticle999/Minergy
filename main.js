@@ -27,6 +27,19 @@ function refreshStats(){
 	document.getElementById("money").innerHTML = money;
 }
 
+function checkEnergyPostive(){
+	if(energyPerSec > 0){
+		document.getElementById("energyPerSec").style.color = green;
+	}
+	if(energyPerSec < 0){
+		document.getElementById("energyPerSec").style.color = red;
+	}
+	if(energyPerSec = 0){
+		document.getElementById("energyPerSec").style.color = white;
+	}
+	document.getElementById("energyPerSec").innerHTML = energyPerSec;
+}
+
 function activeMain() {
     "use strict";
     document.getElementById("mainTab").style.color = "#ffffff";
@@ -482,19 +495,6 @@ function pulseMine4(){
 		}
 		refreshStats();
 	}
-}
-
-function checkEnergyPostive(){
-	if(energyPerSec > 0){
-		document.getElementById("energyPerSec").style.color = green;
-	}
-	if(energyPerSec < 0){
-		document.getElementById("energyPerSec").style.color = red;
-	}
-	if(energyPerSec = 0){
-		document.getElementById("energyPerSec").style.color = white;
-	}
-	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 }
 
 function upgradeAutoSell(){
