@@ -13,7 +13,7 @@ var pulseLevel = 0; var pulse2Level = 0; var pulse3Level = 0; var pulse4Level = 
 var pulseCost = 5000; var pulse2Cost = 100000; var pulse3Cost = 2000000; var pulse4Cost = 50000000;
 var genLevel = 0; var gen2Level = 0; var gen3Level = 0; var gen4Level = 0;
 var genCost = 5000; var gen2Cost = 100000; var gen3Cost = 2000000; var gen4Cost = 50000000;
-var energy = 0;
+var energy = 0; var energyPerSec = 0;
 var autoSell = 0;
 
 function refreshStats(){
@@ -299,9 +299,11 @@ function upgradeGen(){
 		money -= genCost;
 		genLevel += 1;
 		genCost = Math.floor(genCost * 1.5);
+		energyPerSec += 8;
 		document.getElementById("genLevel").innerHTML = genLevel;
 		document.getElementById("genCost").innerHTML = genCost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -310,9 +312,11 @@ function upgradeGen2(){
 		money -= gen2Cost;
 		gen2Level += 1;
 		gen2Cost = Math.floor(gen2Cost * 1.5);
+		energyPerSec += 64;
 		document.getElementById("gen2Level").innerHTML = gen2Level;
 		document.getElementById("gen2Cost").innerHTML = gen2Cost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -321,9 +325,11 @@ function upgradeGen3(){
 		money -= gen3Cost;
 		gen3Level += 1;
 		gen3Cost = Math.floor(gen3Cost * 1.5);
+		energyPerSec += 512;
 		document.getElementById("gen3Level").innerHTML = gen3Level;
 		document.getElementById("gen3Cost").innerHTML = gen3Cost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -332,9 +338,11 @@ function upgradeGen4(){
 		money -= gen4Cost;
 		gen4Level += 1;
 		gen4Cost = Math.floor(gen4Cost * 1.5);
+		energyPerSec += 4096;
 		document.getElementById("gen4Level").innerHTML = gen4Level;
 		document.getElementById("gen4Cost").innerHTML = gen4Cost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -343,9 +351,11 @@ function upgradePulse(){
 		money -= pulseCost;
 		pulseLevel += 1;
 		pulseCost = Math.floor(pulseCost * 1.5);
+		energyPerSec -= 8;
 		document.getElementById("pulseLevel").innerHTML = pulseLevel;
 		document.getElementById("pulseCost").innerHTML = pulseCost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -357,6 +367,8 @@ function upgradePulse2(){
 		document.getElementById("pulse2Level").innerHTML = pulse2Level;
 		document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
 		document.getElementById("money").innerHTML = money;
+		energyPerSec -= 64;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -365,9 +377,11 @@ function upgradePulse3(){
 		money -= pulse3Cost;
 		pulse3Level += 1;
 		pulse3Cost = Math.floor(pulse3Cost * 1.5);
+		energyPerSec -= 512;
 		document.getElementById("pulse3Level").innerHTML = pulse3Level;
 		document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
@@ -376,9 +390,11 @@ function upgradePulse4(){
 		money -= pulse4Cost;
 		pulse4Level += 1;
 		pulse4Cost = Math.floor(pulse4Cost * 1.5);
+		energyPerSec -= 4096;
 		document.getElementById("pulse4Level").innerHTML = pulse4Level;
 		document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
 		document.getElementById("money").innerHTML = money;
+		document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	}
 }
 
