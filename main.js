@@ -472,7 +472,7 @@ function upgradeAutoSell(){
 	if(money >= 1000000){
 		money -= 1000000;
 		autosell = 1;
-		classname += " disabled"
+		document.getElementById("upgradeAutoSell").classname += " disabled"
 	}
 }
 
