@@ -128,25 +128,53 @@ function load(){
 	if (typeof savegame.money !== "undefined") money = savegame.money;
 	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
 	if (typeof savegame.orePerClick !== "undefined") orePerClick = savegame.orePerClick;
+	
 	if (typeof savegame.pulseLevel !== "undefined") pulseLevel = savegame.pulseLevel;
-	if (typeof savegame.pulseCost !== "undefined") pulseCost = savegame.pulseCost;
 	if (typeof savegame.pulse2Level !== "undefined") pulse2Level = savegame.pulse2Level;
+	if (typeof savegame.pulse3Level !== "undefined") pulse3Level = savegame.pulse3Level;
+	if (typeof savegame.pulse4Level !== "undefined") pulse4Level = savegame.pulse4Level;
+	
+	if (typeof savegame.pulseCost !== "undefined") pulseCost = savegame.pulseCost;
 	if (typeof savegame.pulse2Cost !== "undefined") pulse2Cost = savegame.pulse2Cost;
+	if (typeof savegame.pulse3Cost !== "undefined") pulse3Cost = savegame.pulse3Cost;
+	if (typeof savegame.pulse4Cost !== "undefined") pulse4Cost = savegame.pulse4Cost;
+	
 	if (typeof savegame.genLevel !== "undefined") genLevel = savegame.genLevel;
-	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
 	if (typeof savegame.gen2Level !== "undefined") gen2Level = savegame.gen2Level;
+	if (typeof savegame.gen3Level !== "undefined") gen3Level = savegame.gen3Level;
+	if (typeof savegame.gen4Level !== "undefined") gen4Level = savegame.gen4Level;
+	
+	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
 	if (typeof savegame.gen2Cost !== "undefined") gen2Cost = savegame.gen2Cost;
+	if (typeof savegame.gen3Cost !== "undefined") gen3Cost = savegame.gen3Cost;
+	if (typeof savegame.gen4Cost !== "undefined") gen4Cost = savegame.gen4Cost;
+	
 	if (typeof savegame.pickCost !== "undefined") pickCost = savegame.pickCost;
+	
 	refreshStats();
+	
 	document.getElementById("orePerClick").innerHTML = orePerClick;
+	
 	document.getElementById("genLevel").innerHTML = genLevel;
-	document.getElementById("genCost").innerHTML = genCost;
 	document.getElementById("gen2Level").innerHTML = gen2Level;
+	document.getElementById("gen3Level").innerHTML = gen3Level;
+	document.getElementById("gen4Level").innerHTML = gen4Level;
+	
+	document.getElementById("genCost").innerHTML = genCost;
 	document.getElementById("gen2Cost").innerHTML = gen2Cost;
+	document.getElementById("gen3Cost").innerHTML = gen3Cost;
+	document.getElementById("gen4Cost").innerHTML = gen4Cost;
+	
 	document.getElementById("pulseLevel").innerHTML = pulseLevel;
-	document.getElementById("pulseCost").innerHTML = pulseCost;
 	document.getElementById("pulse2Level").innerHTML = pulse2Level;
+	document.getElementById("pulse3Level").innerHTML = pulse3Level;
+	document.getElementById("pulse4Level").innerHTML = pulse4Level;
+	
+	document.getElementById("pulseCost").innerHTML = pulseCost;
 	document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
+	document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
+	document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
+	
 	document.getElementById("pickCost").innerHTML = pickCost;
 	alert("Load Successful!");
 }
