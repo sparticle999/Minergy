@@ -483,6 +483,6 @@ window.setInterval(function(){
 	pulseMine();
 	pulseMine2();
 	pulseMine3();
-	pulseMiner4();
+	pulseMine4();
 	refreshStats();
 }, 1000);
