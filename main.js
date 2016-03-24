@@ -468,7 +468,7 @@ function pulseMine4(){
 	}
 }
 
-function autoSellUpgrade(){
+function upgradeAutoSell(){
 	if(money >= 1000000){
 		money -= 1000000;
 		autosell = 1;
