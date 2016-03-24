@@ -122,7 +122,7 @@ function load(){
 	if (typeof savegame.pulse2Cost !== "undefined") pulse2Cost = savegame.pulse2Cost;
 	if (typeof savegame.genLevel !== "undefined") genLevel = savegame.genLevel;
 	if (typeof savegame.genCost !== "undefined") genCost = savegame.genCost;
-	if (typeof savegame.gen2level !== "undefined") gen2level = savegame.gen2level;
+	if (typeof savegame.gen2Level !== "undefined") gen2Level = savegame.gen2Level;
 	if (typeof savegame.gen2Cost !== "undefined") gen2Cost = savegame.gen2Cost;
 	if (typeof savegame.pickCost !== "undefined") pickCost = savegame.pickCost;
 	refreshStats();
