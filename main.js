@@ -470,8 +470,8 @@ function pulseMine4(){
 }
 
 function winGame(){
-	if (money >= 10000000){
-		money -= 10000000;
+	if (money >= 1000000000){
+		money -= 1000000000;
 		refreshStats();
 		alert("Congratulations! You Have Won The Game!!!");
 		alert("You Can Quit Now (HIGHLY Unadvisable), or you can carry on playing!");
