@@ -179,22 +179,22 @@ function pulseMine(){
 		energy = energy - (pulseLevel * 8);
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
-		diamond += 16;
+		diamond += (16 * pulseLevel);
 		}
 		if(oreType2 < 96 && oreType2 >= 86){
-			gold += 16;
+			gold += (16 * pulseLevel);
 		}
 		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += 16;
+			lithium += (16 * pulseLevel);
 		}
 		if(oreType2 < 71 && oreType2 >= 51){
-			iron += 16;
+			iron += (16 * pulseLevel);
 		}
 		if(oreType2 < 51 && oreType2 >= 31){
-		tin += 16;
+			tin += (16 * pulseLevel);
 		}
 		if(oreType2 < 31){
-			copper += 16;
+			copper += (16 * pulseLevel);
 		}
 		refreshStats();
 	}
@@ -310,22 +310,22 @@ function pulseMine2(){
 		energy -= pulse2Level * 64;
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
-			diamond += 128;
+			diamond += (128 * pulse2Level);
 		}
 		if(oreType2 < 96 && oreType2 >= 86){
-			gold += 128;
+			gold += (128 * pulse2Level);
 		}
 		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += 128;
+			lithium += (128 * pulse2Level);
 		}
 		if(oreType2 < 71 && oreType2 >= 51){
-			iron += 128;
+			iron += (128 * pulse2Level);
 		}
 		if(oreType2 < 51 && oreType2 >= 31){
-		tin += 128;
+			tin += (128 * pulse2Level);
 		}
 		if(oreType2 < 31){
-			copper += 128;
+			copper += (128 * pulse2Level);
 		}
 		refreshStats();
 	}
