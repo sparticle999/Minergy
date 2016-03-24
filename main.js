@@ -29,13 +29,13 @@ function refreshStats(){
 
 function checkEnergyPositive(){
 	if(energyPerSec > 0){
-		document.getElementById("energyPerSec").style.color = green;
+		document.getElementById("energyPerSec").style.color = "#00FF00";
 	}
 	if(energyPerSec < 0){
-		document.getElementById("energyPerSec").style.color = red;
+		document.getElementById("energyPerSec").style.color = "red";
 	}
 	if(energyPerSec = 0){
-		document.getElementById("energyPerSec").style.color = white;
+		document.getElementById("energyPerSec").style.color = "white";
 	}
 	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 }
