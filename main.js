@@ -9,8 +9,10 @@ var diamond = 0; var diamondPrice = 100; var diamondNum = 0;
 var money = 0;
 var pickCost = 500;
 var orePerClick = 1;
-var pulseLevel = 0; var pulseCost = 5000; var pulse2Level = 0; var pulse2Cost = 100000;
-var genLevel = 0; var genCost = 5000; var gen2Level = 0; var gen2Cost = 100000;
+var pulseLevel = 0; var pulse2Level = 0; var pulse3Level = 0; var pulse4Level = 0;
+var pulseCost = 5000; var pulse2Cost = 100000; var pulse3Cost = 2000000; var pulse4Cost = 50000000;
+var genLevel = 0; var gen2Level = 0; var gen3Level = 0; var gen4Level = 0;
+var genCost = 5000; var gen2Cost = 100000; var gen3Cost = 2000000; var gen4Cost = 50000000;
 var energy = 0;
 
 function refreshStats(){
@@ -97,13 +99,23 @@ function save(){
 		energy: energy,
 		orePerClick: orePerClick,
 		pulseLevel: pulseLevel,
-		pulseCost: pulseCost,
 		pulse2Level: pulse2Level,
+		pulse3Level: pulse3Level,
+		pulse4Level: pulse4Level,
+		pulseCost: pulseCost,
 		pulse2Cost: pulse2Cost,
+		pulse3Cost: pulse3Cost,
+		pulse4Cost: pulse4Cost,
 		genLevel: genLevel,
-		genCost: genCost,
 		gen2Level: gen2Level,
+		gen3Level: gen3Level,
+		gen4Level: gen4Level,
+		genCost: genCost,
 		gen2Cost: gen2Cost,
+		gen3Cost: gen3Cost,
+		gen4Cost: gen4Cost,
+		
+		
 		pickCost: pickCost,
 	};
 	localStorage.setItem("save",JSON.stringify(save));
@@ -302,6 +314,8 @@ function upgradePulse2(){
 function getEnergy(){
 	energy += genLevel * 8;
 	energy += gen2Level * 64;
+	energy += gen3Level * 512;
+	energy += gen4Level * 4096;
 	refreshStats();
 }
 
