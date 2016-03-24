@@ -106,6 +106,7 @@ function save(){
 		gen2Cost: gen2Cost,
 	};
 	localStorage.setItem("save",JSON.stringify(save));
+	alert("Save Successful!");
 }
 
 function load(){
@@ -132,6 +133,7 @@ function load(){
 	document.getElementById("pulseCost").innerHTML = pulseCost;
 	document.getElementById("pulse2Level").innerHTML = pulse2Level;
 	document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
+	alert("Load Successful!");
 }
 
 function deleteSave(){
