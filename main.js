@@ -14,6 +14,7 @@ var pulseCost = 5000; var pulse2Cost = 100000; var pulse3Cost = 2000000; var pul
 var genLevel = 0; var gen2Level = 0; var gen3Level = 0; var gen4Level = 0;
 var genCost = 5000; var gen2Cost = 100000; var gen3Cost = 2000000; var gen4Cost = 50000000;
 var energy = 0;
+var autoSell = 0;
 
 function refreshStats(){
 	document.getElementById("iron").innerHTML = iron;
@@ -114,8 +115,6 @@ function save(){
 		gen2Cost: gen2Cost,
 		gen3Cost: gen3Cost,
 		gen4Cost: gen4Cost,
-		
-		
 		pickCost: pickCost,
 	};
 	localStorage.setItem("save",JSON.stringify(save));
@@ -469,6 +468,13 @@ function pulseMine4(){
 	}
 }
 
+function autoSellUpgrade(){
+	if(money >= 1000000){
+		money -= 1000000;
+		autosell = 1;
+	}
+}
+
 function winGame(){
 	if (money >= 1000000000){
 		money -= 1000000000;
@@ -484,5 +490,8 @@ window.setInterval(function(){
 	pulseMine2();
 	pulseMine3();
 	pulseMine4();
+	if(autoSell = 1){
+		sellAll();
+	}
 	refreshStats();
 }, 1000);
