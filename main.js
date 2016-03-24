@@ -28,6 +28,7 @@ function refreshStats(){
 }
 
 function checkEnergyPositive(){
+	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	if(energyPerSec > 0){
 		document.getElementById("energyPerSec").style.color = "#00FF00";
 	}
@@ -37,7 +38,6 @@ function checkEnergyPositive(){
 	if(energyPerSec = 0){
 		document.getElementById("energyPerSec").style.color = "white";
 	}
-	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 }
 
 function activeMain() {
