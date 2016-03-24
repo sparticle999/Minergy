@@ -4,7 +4,7 @@ Developed by sparticle999
 
 [Game Link](http://sparticle999.github.io/Minergy/)
 
-[Reddit Link](https://www.reddit.com/r/incremental_games/comments/4b3lzx/oreminer_alpha/)
+[Reddit Link](https://www.reddit.com/r/incremental_games/comments/4bsm9t/minergy_beta/)
 
 A small project for fun - an attempt at an incremental game
 
