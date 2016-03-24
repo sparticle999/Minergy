@@ -27,7 +27,7 @@ function refreshStats(){
 	document.getElementById("money").innerHTML = money;
 }
 
-function checkEnergyPostive(){
+function checkEnergyPositive(){
 	if(energyPerSec > 0){
 		document.getElementById("energyPerSec").style.color = green;
 	}
