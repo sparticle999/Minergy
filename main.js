@@ -301,7 +301,7 @@ function upgradePulse2(){
 
 function getEnergy(){
 	energy += genLevel * 8;
-	energy += gen2Level * 32;
+	energy += gen2Level * 64;
 	refreshStats();
 }
 
