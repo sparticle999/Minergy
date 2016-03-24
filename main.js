@@ -91,6 +91,7 @@ function activeShop() {
 }
 
 function save(){
+	"use strict";
 	var save = {
 		money: money,
 		energy: energy,
@@ -108,6 +109,7 @@ function save(){
 }
 
 function load(){
+	"use strict";
 	var savegame = JSON.parse(localStorage.getItem("save"));
 	if (typeof savegame.money !== "undefined") money = savegame.money;
 	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
@@ -133,6 +135,7 @@ function load(){
 }
 
 function deleteSave(){
+	"use strict";
 	var deleteSave = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box.");
 	if(deleteSave === "DELETE"){
 		localStorage.removeItem("save");
