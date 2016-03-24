@@ -303,7 +303,7 @@ function upgradeGen(){
 		document.getElementById("genLevel").innerHTML = genLevel;
 		document.getElementById("genCost").innerHTML = genCost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -316,7 +316,7 @@ function upgradeGen2(){
 		document.getElementById("gen2Level").innerHTML = gen2Level;
 		document.getElementById("gen2Cost").innerHTML = gen2Cost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -329,7 +329,7 @@ function upgradeGen3(){
 		document.getElementById("gen3Level").innerHTML = gen3Level;
 		document.getElementById("gen3Cost").innerHTML = gen3Cost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -342,7 +342,7 @@ function upgradeGen4(){
 		document.getElementById("gen4Level").innerHTML = gen4Level;
 		document.getElementById("gen4Cost").innerHTML = gen4Cost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -355,7 +355,7 @@ function upgradePulse(){
 		document.getElementById("pulseLevel").innerHTML = pulseLevel;
 		document.getElementById("pulseCost").innerHTML = pulseCost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -364,11 +364,11 @@ function upgradePulse2(){
 		money -= pulse2Cost;
 		pulse2Level += 1;
 		pulse2Cost = Math.floor(pulse2Cost * 1.5);
+		energyPerSec -= 64;
 		document.getElementById("pulse2Level").innerHTML = pulse2Level;
 		document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
 		document.getElementById("money").innerHTML = money;
-		energyPerSec -= 64;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -381,7 +381,7 @@ function upgradePulse3(){
 		document.getElementById("pulse3Level").innerHTML = pulse3Level;
 		document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -394,7 +394,7 @@ function upgradePulse4(){
 		document.getElementById("pulse4Level").innerHTML = pulse4Level;
 		document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
 		document.getElementById("money").innerHTML = money;
-		document.getElementById("energyPerSec").innerHTML = energyPerSec;
+		checkEnergyPositive();
 	}
 }
 
@@ -482,6 +482,19 @@ function pulseMine4(){
 		}
 		refreshStats();
 	}
+}
+
+function checkEnergyPostive(){
+	if(energyPerSec > 0){
+		document.getElementById("energyPerSec").style.color = green;
+	}
+	if(energyPerSec < 0){
+		document.getElementById("energyPerSec").style.color = red;
+	}
+	if(energyPerSec = 0){
+		document.getElementById("energyPerSec").style.color = white;
+	}
+	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 }
 
 function upgradeAutoSell(){
