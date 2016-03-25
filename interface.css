@@ -66,9 +66,8 @@ a:hover {
 #energyNum{
 	color: #b3b300;
 }
-.button{
-	background-color: orange;
-	color: black;
+.bold{
+	font-weight: bold;
 }
 .sellButton{
 	color: black;
