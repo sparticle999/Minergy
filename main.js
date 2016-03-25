@@ -311,26 +311,28 @@ function gainOre(){
 function pulseMine(){
 	if(energy > (pulseLevel * 8) && pulseLevel > 0){
 		energy = energy - (pulseLevel * 8);
+		for (i=1;i<=(16 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
 		if(oreType2 >= 96){
-		diamond += (16 * pulseLevel);
+		diamond += 1;
 		}
 		if(oreType2 < 96 && oreType2 >= 86){
-			gold += (16 * pulseLevel);
+			gold += 1;
 		}
 		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += (16 * pulseLevel);
+			lithium += 1;
 		}
 		if(oreType2 < 71 && oreType2 >= 51){
-			iron += (16 * pulseLevel);
+			iron += 1;
 		}
 		if(oreType2 < 51 && oreType2 >= 31){
-			tin += (16 * pulseLevel);
+			tin += 1;
 		}
 		if(oreType2 < 31){
-			copper += (16 * pulseLevel);
+			copper += 1;
 		}
 		refreshStats();
+		}
 	}
 }
 
