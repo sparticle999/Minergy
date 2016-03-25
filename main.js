@@ -508,7 +508,7 @@ function upgradeAutoSell(){
 function autoSellAll(){
 	if(autoSell === 1){
 		autoSellCount += 1;
-		if(autoSellCount = 60){
+		if(autoSellCount === 60){
 			autoSellCount = 0;
 			sellAll();
 		}
