@@ -169,6 +169,7 @@ function load(){
 	
 	document.getElementById("orePerClick").innerHTML = orePerClick;
 	document.getElementById("energyPerSec").innerHTML = energyPerSec;
+	checkEnergyPositive();
 	
 	document.getElementById("genLevel").innerHTML = genLevel;
 	document.getElementById("gen2Level").innerHTML = gen2Level;
