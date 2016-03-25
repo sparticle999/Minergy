@@ -229,35 +229,35 @@ function redditPage(){
 }
 
 function unlockTin(){
-	if(money>500){
+	if(money > 500){
 		money -= 500;
 		unlockTin = 1;
 	}
 }
 
 function unlockIron(){
-	if(money>5000){
+	if(money > 5000){
 		money -= 2500;
 		unlockIron = 1;
 	}
 }
 
 function unlockLithium(){
-	if(money>5000){
+	if(money > 5000){
 		money -= 5000;
 		unlockLithium = 1;
 	}
 }
 
 function unlockGold(){
-	if(money>20000){
+	if(money > 20000){
 		money -= 20000;
 		unlockGoldn = 1;
 	}
 }
 
 function unlockDiamond(){
-	if(money>100000){
+	if(money > 100000){
 		money -= 100000;
 		unlockDiamond = 1;
 	}
