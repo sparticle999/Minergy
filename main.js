@@ -505,7 +505,7 @@ function upgradeAutoSell(){
 	}
 }
 
-function autoSell(){
+function autoSellAll(){
 	if(autoSell === 1){
 		autoSellCount += 1;
 		if(autoSellCount = 60){
@@ -530,6 +530,6 @@ window.setInterval(function(){
 	pulseMine2();
 	pulseMine3();
 	pulseMine4();
-	autoSell();
+	autoSellAll();
 	refreshStats();
 }, 1000);
