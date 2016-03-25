@@ -216,12 +216,12 @@ function redditPage(){
 }
 
 function gainOre(){
-	for(i=0,i<orePerClick,i++){
+	for(i=0,i<orePerClick,i++) {
 		oreType = Math.floor(Math.random() * 100);
 		if(oreType >= 96){
 			diamond += orePerClick;
 		}
-		if(oreType < 96 && oreType >= 86) {
+		if(oreType < 96 && oreType >= 86){
 			gold += orePerClick;
 		}
 		if(oreType < 86 && oreType >= 71){
