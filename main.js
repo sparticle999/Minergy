@@ -351,7 +351,7 @@ function upgradeGen3(){
 }
 
 function upgradeGen4(){
-	if(money > gen2Cost){
+	if(money > gen4Cost){
 		money -= gen4Cost;
 		gen4Level += 1;
 		gen4Cost = Math.floor(gen4Cost * 1.5);
