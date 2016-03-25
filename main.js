@@ -221,7 +221,7 @@ function gainOre(){
 		if(oreType >= 96){
 			diamond += orePerClick;
 		}
-		if(oreType < 96 && oreType >= 86){
+		if(oreType < 96 && oreType >= 86) {
 			gold += orePerClick;
 		}
 		if(oreType < 86 && oreType >= 71){
