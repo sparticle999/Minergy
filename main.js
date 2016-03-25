@@ -8,7 +8,7 @@ var lithium = 0; var lithiumPrice = 15; var lithiumNum = 0;
 var diamond = 0; var diamondPrice = 100; var diamondNum = 0;
 var money = 0;
 var pickCost = 500;
-var orePerClick = 1;
+var orePerClick = 1; var orePerSec = 0;
 var pulseLevel = 0; var pulse2Level = 0; var pulse3Level = 0; var pulse4Level = 0;
 var pulseCost = 5000; var pulse2Cost = 100000; var pulse3Cost = 2000000; var pulse4Cost = 50000000;
 var genLevel = 0; var gen2Level = 0; var gen3Level = 0; var gen4Level = 0;
