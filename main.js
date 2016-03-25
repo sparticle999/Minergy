@@ -238,7 +238,7 @@ function unlockTinFunction(){
 }
 
 function unlockIronFunction(){
-	if(money > 5000){
+	if(money > 2500){
 		money -= 2500;
 		unlockIron = 1;
 		document.getElementById("unlockIron").className += " hidden";
