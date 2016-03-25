@@ -15,6 +15,7 @@ var genLevel = 0; var gen2Level = 0; var gen3Level = 0; var gen4Level = 0;
 var genCost = 5000; var gen2Cost = 100000; var gen3Cost = 2000000; var gen4Cost = 50000000;
 var energy = 0; var energyPerSec = 0;
 var autoSell = 0; var autoSellCount = 0;
+var unlockTin = 0; var unlockIron = 0; var unlockLithium = 0; var unlockGold = 0; var unlockDiamond = 0;
 
 function refreshStats(){
 	document.getElementById("iron").innerHTML = iron;
@@ -215,23 +216,68 @@ function redditPage(){
 	window.open("https://www.reddit.com/r/incremental_games/comments/4bsm9t/minergy_beta/");
 }
 
+function unlockTin(){
+	if(money>XXX){
+		money -= XXX;
+		unlockTin = 1;
+	}
+}
+
+function unlockIron(){
+	if(money>XXX){
+		money -= XXX;
+		unlockIron = 1;
+	}
+}
+
+function unlockLithium(){
+	if(money>XXX){
+		money -= XXX;
+		unlockLithium = 1;
+	}
+}
+
+function unlockGold(){
+	if(money>XXX){
+		money -= XXX;
+		unlockGoldn = 1;
+	}
+}
+
+function unlockDiamond(){
+	if(money>XXX){
+		money -= XXX;
+		unlockDiamond = 1;
+	}
+}
+
 function gainOre(){
 	for (i=1;i<=orePerClick;i++) {
 		oreType = Math.floor(Math.random() * 100);
-		if(oreType >= 96){
-			diamond += 1;
+		if(unlockDiamond === 1){
+			if(oreType >= 96){
+				diamond += 1;
+			}
 		}
-		if(oreType < 96 && oreType >= 86){
-			gold += 1;
+		if(unlockGold === 1){
+			if(oreType < 96 && oreType >= 86){
+				gold += 1;
+			}
 		}
-		if(oreType < 86 && oreType >= 71){
-			lithium += 1;
+		if(unlockLithium === 1){
+			if(oreType < 86 && oreType >= 71){
+				lithium += 1;
+			}
 		}
-		if(oreType < 71 && oreType >= 51){
-			iron += 1;
+		if(unlockIron === 1){
+			if(oreType < 71 && oreType >= 51){
+				iron += 1;
+			}
 		}
-		if(oreType < 51 && oreType >= 31){
-			tin += 1;
+		if(unlockTin === 1){
+			if(oreType < 51 && oreType >= 31){
+				tin += 1;
+			}
 		}
 		if(oreType < 31){
 			copper += 1;
