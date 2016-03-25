@@ -500,7 +500,7 @@ function pulseMine4(){
 function upgradeAutoSell(){
 	if(money >= 1000000){
 		money -= 1000000;
-		autosell = 1;
+		autoSell = 1;
 		document.getElementById("upgradeAutoSell").className = "btn-info hidden"
 	}
 }
