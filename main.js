@@ -207,19 +207,19 @@ function load(){
 	document.getElementById("pickCost").innerHTML = pickCost;
 	
 	if(unlockTin = 1){
-		document.getElementById("unlockTin").className += " hidden";)
+		document.getElementById("unlockTin").className += " hidden";
 	}
 	if(unlockIron = 1){
-		document.getElementById("unlockIron").className += " hidden";)
+		document.getElementById("unlockIron").className += " hidden";
 	}
 	if(unlockLithium = 1){
-		document.getElementById("unlockLithium").className += " hidden";)
+		document.getElementById("unlockLithium").className += " hidden";
 	}
 	if(unlockGold = 1){
-		document.getElementById("unlockGold").className += " hidden";)
+		document.getElementById("unlockGold").className += " hidden";
 	}
 	if(unlockDiamond = 1){
-		document.getElementById("unlockDiamond").className += " hidden";)
+		document.getElementById("unlockDiamond").className += " hidden";
 	}
 	
 	alert("Load Successful!");
