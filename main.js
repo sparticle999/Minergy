@@ -216,26 +216,28 @@ function redditPage(){
 }
 
 function gainOre(){
-	oreType = Math.floor(Math.random() * 100);
-	if(oreType >= 96){
-		diamond += orePerClick;
+	for(i=0,i<orePerClick,i++){
+		oreType = Math.floor(Math.random() * 100);
+		if(oreType >= 96){
+			diamond += orePerClick;
+		}
+		if(oreType < 96 && oreType >= 86){
+			gold += orePerClick;
+		}
+		if(oreType < 86 && oreType >= 71){
+			lithium += orePerClick;
+		}
+		if(oreType < 71 && oreType >= 51){
+			iron += orePerClick;
+		}
+		if(oreType < 51 && oreType >= 31){
+			tin += orePerClick;
+		}
+		if(oreType < 31){
+			copper += orePerClick;
+		}
+		refreshStats();
 	}
-	if(oreType < 96 && oreType >= 86){
-		gold += orePerClick;
-	}
-	if(oreType < 86 && oreType >= 71){
-		lithium += orePerClick;
-	}
-	if(oreType < 71 && oreType >= 51){
-		iron += orePerClick;
-	}
-	if(oreType < 51 && oreType >= 31){
-		tin += orePerClick;
-	}
-	if(oreType < 31){
-		copper += orePerClick;
-	}
-	refreshStats();
 }
 
 function pulseMine(){
