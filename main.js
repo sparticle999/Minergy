@@ -113,7 +113,13 @@ function save(){
 		money: money,
 		energy: energy,
 		energyPerSec: energyPerSec,
+		autoSell: autoSell,
 		orePerClick: orePerClick,
+		unlockTin: unlockTin,
+		unlockIron: unlockIron,
+		unlockLithium: unlockLithium,
+		unlockGold: unlockGold,
+		unlockDiamond: unlockDiamond,
 		pulseLevel: pulseLevel,
 		pulse2Level: pulse2Level,
 		pulse3Level: pulse3Level,
@@ -143,6 +149,12 @@ function load(){
 	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
 	if (typeof savegame.energyPerSec !== "undefined") energyPerSec = savegame.energyPerSec;
 	if (typeof savegame.orePerClick !== "undefined") orePerClick = savegame.orePerClick;
+	if (typeof savegame.autoSell !== "undefined") autoSell = savegame.autoSell;
+	if (typeof savegame.unlockTin !== "undefined") unlockTin = savegame.unlockTin;
+	if (typeof savegame.unlockIron !== "undefined") unlockIron = savegame.unlockIron;
+	if (typeof savegame.unlockLithium !== "undefined") unlockLithium = savegame.unlockLithium;
+	if (typeof savegame.unlockGold !== "undefined") unlockGold = savegame.unlockGold;
+	if (typeof savegame.unlockDiamond !== "undefined") unlockDiamond = savegame.unlockDiamond;
 	
 	if (typeof savegame.pulseLevel !== "undefined") pulseLevel = savegame.pulseLevel;
 	if (typeof savegame.pulse2Level !== "undefined") pulse2Level = savegame.pulse2Level;
