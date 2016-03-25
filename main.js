@@ -115,6 +115,7 @@ function save(){
 		energyPerSec: energyPerSec,
 		autoSell: autoSell,
 		orePerClick: orePerClick,
+		orePerSec: orePerSec,
 		unlockTin: unlockTin,
 		unlockIron: unlockIron,
 		unlockLithium: unlockLithium,
@@ -149,6 +150,7 @@ function load(){
 	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
 	if (typeof savegame.energyPerSec !== "undefined") energyPerSec = savegame.energyPerSec;
 	if (typeof savegame.orePerClick !== "undefined") orePerClick = savegame.orePerClick;
+	if (typeof savegame.orePerSec !== "undefined") orePerSec = savegame.orePerSec;
 	if (typeof savegame.autoSell !== "undefined") autoSell = savegame.autoSell;
 	if (typeof savegame.unlockTin !== "undefined") unlockTin = savegame.unlockTin;
 	if (typeof savegame.unlockIron !== "undefined") unlockIron = savegame.unlockIron;
@@ -181,6 +183,7 @@ function load(){
 	refreshStats();
 	
 	document.getElementById("orePerClick").innerHTML = orePerClick;
+	document.getElementById("orePerSec").innerHTML = orePerSec;
 	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	checkEnergyPositive();
 	
@@ -476,6 +479,8 @@ function upgradePulse(){
 		pulseLevel += 1;
 		pulseCost = Math.floor(pulseCost * 1.5);
 		energyPerSec -= 8;
+		orePerSec += 16
+		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulseLevel").innerHTML = pulseLevel;
 		document.getElementById("pulseCost").innerHTML = pulseCost;
 		document.getElementById("money").innerHTML = money;
@@ -489,6 +494,8 @@ function upgradePulse2(){
 		pulse2Level += 1;
 		pulse2Cost = Math.floor(pulse2Cost * 1.5);
 		energyPerSec -= 64;
+		orePerSec += 128
+		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse2Level").innerHTML = pulse2Level;
 		document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
 		document.getElementById("money").innerHTML = money;
@@ -502,6 +509,8 @@ function upgradePulse3(){
 		pulse3Level += 1;
 		pulse3Cost = Math.floor(pulse3Cost * 1.5);
 		energyPerSec -= 512;
+		orePerSec += 1024
+		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse3Level").innerHTML = pulse3Level;
 		document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
 		document.getElementById("money").innerHTML = money;
@@ -515,6 +524,8 @@ function upgradePulse4(){
 		pulse4Level += 1;
 		pulse4Cost = Math.floor(pulse4Cost * 1.5);
 		energyPerSec -= 4096;
+		orePerSec += 8912
+		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse4Level").innerHTML = pulse4Level;
 		document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
 		document.getElementById("money").innerHTML = money;
