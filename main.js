@@ -205,6 +205,23 @@ function load(){
 	document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
 	
 	document.getElementById("pickCost").innerHTML = pickCost;
+	
+	if(unlockTin = 1){
+		document.getElementById("unlockTin").className += " hidden";)
+	}
+	if(unlockIron = 1){
+		document.getElementById("unlockIron").className += " hidden";)
+	}
+	if(unlockLithium = 1){
+		document.getElementById("unlockLithium").className += " hidden";)
+	}
+	if(unlockGold = 1){
+		document.getElementById("unlockGold").className += " hidden";)
+	}
+	if(unlockDiamond = 1){
+		document.getElementById("unlockDiamond").className += " hidden";)
+	}
+	
 	alert("Load Successful!");
 }
 
