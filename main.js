@@ -111,6 +111,7 @@ function save(){
 	var save = {
 		money: money,
 		energy: energy,
+		energyPerSec: energyPerSec,
 		orePerClick: orePerClick,
 		pulseLevel: pulseLevel,
 		pulse2Level: pulse2Level,
@@ -139,6 +140,7 @@ function load(){
 	var savegame = JSON.parse(localStorage.getItem("save"));
 	if (typeof savegame.money !== "undefined") money = savegame.money;
 	if (typeof savegame.energy !== "undefined") energy = savegame.energy;
+	if (typeof savegame.energyPerSec !== "undefined") energyPerSec = savegame.energyPerSec;
 	if (typeof savegame.orePerClick !== "undefined") orePerClick = savegame.orePerClick;
 	
 	if (typeof savegame.pulseLevel !== "undefined") pulseLevel = savegame.pulseLevel;
@@ -166,6 +168,7 @@ function load(){
 	refreshStats();
 	
 	document.getElementById("orePerClick").innerHTML = orePerClick;
+	document.getElementById("energyPerSec").innerHTML = energyPerSec;
 	
 	document.getElementById("genLevel").innerHTML = genLevel;
 	document.getElementById("gen2Level").innerHTML = gen2Level;
