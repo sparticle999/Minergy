@@ -255,7 +255,7 @@ function unlockLithiumFunction(){
 function unlockGoldFunction(){
 	if(money > 20000){
 		money -= 20000;
-		unlockGoldn = 1;
+		unlockGold = 1;
 		document.getElemementById("unlockGold").className += " hidden";
 	}
 }
