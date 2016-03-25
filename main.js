@@ -330,26 +330,36 @@ function pulseMine(){
 		energy = energy - (pulseLevel * 8);
 		for (i=1;i<=(16 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
-		if(oreType2 >= 96){
-		diamond += 1;
+		if(unlockDiamond === 1){
+			if(oreType2 >= 96){
+				diamond += 1;
+			}
 		}
-		if(oreType2 < 96 && oreType2 >= 86){
-			gold += 1;
+		if(unlockGold === 1){
+			if(oreType2 < 96 && oreType2 >= 86){
+				gold += 1;
+			}
 		}
-		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += 1;
+		if(unlockLithium === 1){
+			if(oreType2 < 86 && oreType2 >= 71){
+				lithium += 1;
+			}
 		}
-		if(oreType2 < 71 && oreType2 >= 51){
-			iron += 1;
+		if(unlockIron === 1){
+			if(oreType2 < 71 && oreType2 >= 51){
+				iron += 1;
+			}
 		}
-		if(oreType2 < 51 && oreType2 >= 31){
-			tin += 1;
+		if(unlockTin === 1){
+			if(oreType2 < 51 && oreType2 >= 31){
+				tin += 1;
+			}
 		}
 		if(oreType2 < 31){
 			copper += 1;
 		}
-		refreshStats();
 		}
+		refreshStats();
 	}
 }
 
@@ -523,24 +533,36 @@ function getEnergy(){
 function pulseMine2(){
 	if(energy > (pulse2Level * 64) && pulse2Level > 0){
 		energy -= pulse2Level * 64;
+		for (i=1;i<=(128 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
-		if(oreType2 >= 96){
-			diamond += (128 * pulse2Level);
+		if(unlockDiamond === 1){
+			if(oreType2 >= 96){
+				diamond += 1;
+			}
 		}
-		if(oreType2 < 96 && oreType2 >= 86){
-			gold += (128 * pulse2Level);
+		if(unlockGold === 1){
+			if(oreType2 < 96 && oreType2 >= 86){
+				gold += 1;
+			}
 		}
-		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += (128 * pulse2Level);
+		if(unlockLithium === 1){
+			if(oreType2 < 86 && oreType2 >= 71){
+				lithium += 1;
+			}
 		}
-		if(oreType2 < 71 && oreType2 >= 51){
-			iron += (128 * pulse2Level);
+		if(unlockIron === 1){
+			if(oreType2 < 71 && oreType2 >= 51){
+				iron += 1;
+			}
 		}
-		if(oreType2 < 51 && oreType2 >= 31){
-			tin += (128 * pulse2Level);
+		if(unlockTin === 1){
+			if(oreType2 < 51 && oreType2 >= 31){
+				tin += 1;
+			}
 		}
 		if(oreType2 < 31){
-			copper += (128 * pulse2Level);
+			copper += 1;
+		}
 		}
 		refreshStats();
 	}
@@ -549,50 +571,74 @@ function pulseMine2(){
 function pulseMine3(){
 	if(energy > (pulse3Level * 512) && pulse3Level > 0){
 		energy -= pulse3Level * 512;
+		for (i=1;i<=(1024 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
-		if(oreType2 >= 96){
-			diamond += (1024 * pulse3Level);
+		if(unlockDiamond === 1){
+			if(oreType2 >= 96){
+				diamond += 1;
+			}
 		}
-		if(oreType2 < 96 && oreType2 >= 86){
-			gold += (1024 * pulse3Level);
+		if(unlockGold === 1){
+			if(oreType2 < 96 && oreType2 >= 86){
+				gold += 1;
+			}
 		}
-		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += (1024 * pulse3Level);
+		if(unlockLithium === 1){
+			if(oreType2 < 86 && oreType2 >= 71){
+				lithium += 1;
+			}
 		}
-		if(oreType2 < 71 && oreType2 >= 51){
-			iron += (1024 * pulse3Level);
+		if(unlockIron === 1){
+			if(oreType2 < 71 && oreType2 >= 51){
+				iron += 1;
+			}
 		}
-		if(oreType2 < 51 && oreType2 >= 31){
-			tin += (1024 * pulse3Level);
+		if(unlockTin === 1){
+			if(oreType2 < 51 && oreType2 >= 31){
+				tin += 1;
+			}
 		}
 		if(oreType2 < 31){
-			copper += (1024 * pulse3Level);
+			copper += 1;
+		}
 		}
 		refreshStats();
 	}
 }
 
 function pulseMine4(){
-	if(energy > (pulse4Level * 4096) && pulse4Level > 0){
-		energy -= pulse4Level * 4096;
+	if(energy > (pulse3Level * 4096) && pulse3Level > 0){
+		energy -= pulse3Level * 4096;
+		for (i=1;i<=(8192 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
-		if(oreType2 >= 96){
-			diamond += (8192 * pulse4Level);
+		if(unlockDiamond === 1){
+			if(oreType2 >= 96){
+				diamond += 1;
+			}
 		}
-		if(oreType2 < 96 && oreType2 >= 86){
-			gold += (8192 * pulse4Level);
+		if(unlockGold === 1){
+			if(oreType2 < 96 && oreType2 >= 86){
+				gold += 1;
+			}
 		}
-		if(oreType2 < 86 && oreType2 >= 71){
-			lithium += (8192 * pulse4Level);
+		if(unlockLithium === 1){
+			if(oreType2 < 86 && oreType2 >= 71){
+				lithium += 1;
+			}
 		}
-		if(oreType2 < 71 && oreType2 >= 51){
-			iron += (8192 * pulse4Level);
+		if(unlockIron === 1){
+			if(oreType2 < 71 && oreType2 >= 51){
+				iron += 1;
+			}
 		}
-		if(oreType2 < 51 && oreType2 >= 31){
-			tin += (8192 * pulse4Level);
+		if(unlockTin === 1){
+			if(oreType2 < 51 && oreType2 >= 31){
+				tin += 1;
+			}
 		}
 		if(oreType2 < 31){
-			copper += (8192 * pulse4Level);
+			copper += 1;
+		}
 		}
 		refreshStats();
 	}
