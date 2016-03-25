@@ -225,7 +225,7 @@ function unlockTin(){
 
 function unlockIron(){
 	if(money>5000){
-		money -= 5000;
+		money -= 2500;
 		unlockIron = 1;
 	}
 }
