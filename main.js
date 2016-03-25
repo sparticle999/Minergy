@@ -207,6 +207,14 @@ function deleteSave(){
 	}
 }
 
+function sourceCode(){
+	window.open("https://github.com/sparticle999/Minergy/tree/gh-pages");
+}
+
+function redditPage(){
+	window.open("https://www.reddit.com/r/incremental_games/comments/4bsm9t/minergy_beta/");
+}
+
 function gainOre(){
 	oreType = Math.floor(Math.random() * 100);
 	if(oreType >= 96){
