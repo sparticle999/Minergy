@@ -232,6 +232,7 @@ function unlockTinFunction(){
 	if(money > 500){
 		money -= 500;
 		unlockTin = 1;
+		document.getElemementById("unlockTin").className += " hidden";
 	}
 }
 
@@ -239,6 +240,7 @@ function unlockIronFunction(){
 	if(money > 5000){
 		money -= 2500;
 		unlockIron = 1;
+		document.getElemementById("unlockIron").className += " hidden";
 	}
 }
 
@@ -246,6 +248,7 @@ function unlockLithiumFunction(){
 	if(money > 5000){
 		money -= 5000;
 		unlockLithium = 1;
+		document.getElemementById("unlockLithium").className += " hidden";
 	}
 }
 
@@ -253,6 +256,7 @@ function unlockGoldFunction(){
 	if(money > 20000){
 		money -= 20000;
 		unlockGoldn = 1;
+		document.getElemementById("unlockGold").className += " hidden";
 	}
 }
 
@@ -260,6 +264,7 @@ function unlockDiamondFunction(){
 	if(money > 100000){
 		money -= 100000;
 		unlockDiamond = 1;
+		document.getElemementById("unlockDiamond").className += " hidden";
 	}
 }
 
