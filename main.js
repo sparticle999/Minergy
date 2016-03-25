@@ -219,22 +219,22 @@ function gainOre(){
 	for (i=1;i<=orePerClick;i++) {
 		oreType = Math.floor(Math.random() * 100);
 		if(oreType >= 96){
-			diamond += orePerClick;
+			diamond += 1;
 		}
 		if(oreType < 96 && oreType >= 86){
-			gold += orePerClick;
+			gold += 1;
 		}
 		if(oreType < 86 && oreType >= 71){
-			lithium += orePerClick;
+			lithium += 1;
 		}
 		if(oreType < 71 && oreType >= 51){
-			iron += orePerClick;
+			iron += 1;
 		}
 		if(oreType < 51 && oreType >= 31){
-			tin += orePerClick;
+			tin += 1;
 		}
 		if(oreType < 31){
-			copper += orePerClick;
+			copper += 1;
 		}
 		refreshStats();
 	}
