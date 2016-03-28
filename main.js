@@ -25,13 +25,12 @@ function refreshStats(){
 	document.getElementById("lithium").innerHTML = lithium;
 	document.getElementById("diamond").innerHTML = diamond;
 	document.getElementById("energy").innerHTML = energy;
-	document.getElementById("money").innerHTML = money;
 	numWithCommas(money);
 }
 
 function numWithCommas(x) {
-	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	document.getElementById("x").innerHTML = x;
+	var moneyComma = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("money").innerHTML = moneyComma;
 }
 
 function checkEnergyPositive(){
