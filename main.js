@@ -193,7 +193,7 @@ function load(){
 	document.getElementById("gen2Cost").innerHTML = gen2CostComma;
 	var gen3CostComma = gen3Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("gen3Cost").innerHTML = gen3CostComma;
-	var gen4CostComma = gen4st.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	var gen4CostComma = gen4Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("gen4Cost").innerHTML = gen4CostComma;
 	var pulseCostComma = pulseCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("pulseCost").innerHTML = pulseCostComma;
