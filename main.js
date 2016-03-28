@@ -30,7 +30,7 @@ function refreshStats(){
 
 function numWithCommas(x) {
 	var moneyComma = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	document.getElementById("x").innerHTML = moneyComma;
+	document.getElementById(x).innerHTML = moneyComma;
 }
 
 function checkEnergyPositive(){
