@@ -25,12 +25,8 @@ function refreshStats(){
 	document.getElementById("lithium").innerHTML = lithium;
 	document.getElementById("diamond").innerHTML = diamond;
 	document.getElementById("energy").innerHTML = energy;
-	numWithCommas(money);
-}
-
-function numWithCommas(x) {
-	var moneyComma = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	document.getElementById(x).innerHTML = moneyComma;
+	var moneyComma = money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("money").innerHTML = moneyComma;
 }
 
 function checkEnergyPositive(){
@@ -421,7 +417,8 @@ function upgradePick(){
 		}
 		pickCost *= 2;
 		document.getElementById("orePerClick").innerHTML = orePerClick;
-		document.getElementById("pickCost").innerHTML = pickCost;
+		var pickCostComma = pickCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pickCost").innerHTML = pickCostComma;
 		document.getElementById("money").innerHTML = money;
 	}
 }
