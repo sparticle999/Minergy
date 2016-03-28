@@ -34,6 +34,24 @@ function refreshStats(){
 	document.getElementById("energy").innerHTML = energyComma;
 	var moneyComma = money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("money").innerHTML = moneyComma;
+	var pickCostComma = pickCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pickCost").innerHTML = pickCostComma;
+	var genCostComma = genCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("genCost").innerHTML = genCostComma;
+	var gen2CostComma = gen2Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("gen2Cost").innerHTML = gen2CostComma;
+	var gen3CostComma = gen3Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("gen3Cost").innerHTML = gen3CostComma;
+	var gen4CostComma = gen4Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("gen4Cost").innerHTML = gen4CostComma;
+	var pulseCostComma = pulseCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pulseCost").innerHTML = pulseCostComma;
+	var pulse2CostComma = pulse2Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pulse2Cost").innerHTML = pulse2CostComma;
+	var pulse3CostComma = pulse3Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pulse3Cost").innerHTML = pulse3CostComma;
+	var pulse4CostComma = pulse4Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("pulse4Cost").innerHTML = pulse4CostComma;
 }
 
 function checkEnergyPositive(){
