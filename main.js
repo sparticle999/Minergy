@@ -26,6 +26,11 @@ function refreshStats(){
 	document.getElementById("diamond").innerHTML = diamond;
 	document.getElementById("energy").innerHTML = energy;
 	document.getElementById("money").innerHTML = money;
+	numWithCommas(money);
+}
+
+function numWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function checkEnergyPositive(){
