@@ -430,7 +430,8 @@ function upgradeGen(){
 		genCost = Math.floor(genCost * 1.5);
 		energyPerSec += 8;
 		document.getElementById("genLevel").innerHTML = genLevel;
-		document.getElementById("genCost").innerHTML = genCost;
+		var genCostComma = genCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("genCost").innerHTML = genCostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -443,7 +444,8 @@ function upgradeGen2(){
 		gen2Cost = Math.floor(gen2Cost * 1.5);
 		energyPerSec += 64;
 		document.getElementById("gen2Level").innerHTML = gen2Level;
-		document.getElementById("gen2Cost").innerHTML = gen2Cost;
+		var gen2CostComma = gen2Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("gen2Cost").innerHTML = gen2CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -456,7 +458,8 @@ function upgradeGen3(){
 		gen3Cost = Math.floor(gen3Cost * 1.5);
 		energyPerSec += 512;
 		document.getElementById("gen3Level").innerHTML = gen3Level;
-		document.getElementById("gen3Cost").innerHTML = gen3Cost;
+		var gen3CostComma = gen3Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("gen3Cost").innerHTML = gen3CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -469,7 +472,8 @@ function upgradeGen4(){
 		gen4Cost = Math.floor(gen4Cost * 1.5);
 		energyPerSec += 4096;
 		document.getElementById("gen4Level").innerHTML = gen4Level;
-		document.getElementById("gen4Cost").innerHTML = gen4Cost;
+		var gen4CostComma = gen4st.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("gen4Cost").innerHTML = gen4CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -484,7 +488,8 @@ function upgradePulse(){
 		orePerSec += 16
 		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulseLevel").innerHTML = pulseLevel;
-		document.getElementById("pulseCost").innerHTML = pulseCost;
+		var pulseCostComma = pulseCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pulseCost").innerHTML = pulseCostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -499,7 +504,8 @@ function upgradePulse2(){
 		orePerSec += 128
 		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse2Level").innerHTML = pulse2Level;
-		document.getElementById("pulse2Cost").innerHTML = pulse2Cost;
+		var pulse2CostComma = pulse2Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pulse2Cost").innerHTML = pulse2CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -514,7 +520,8 @@ function upgradePulse3(){
 		orePerSec += 1024
 		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse3Level").innerHTML = pulse3Level;
-		document.getElementById("pulse3Cost").innerHTML = pulse3Cost;
+		var pulse3CostComma = pulse3Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pulse3Cost").innerHTML = pulse3CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
@@ -529,7 +536,8 @@ function upgradePulse4(){
 		orePerSec += 8912
 		document.getElementById("orePerSec").innerHTML = orePerSec;
 		document.getElementById("pulse4Level").innerHTML = pulse4Level;
-		document.getElementById("pulse4Cost").innerHTML = pulse4Cost;
+		var pulse4CostComma = pulse4Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pulse4Cost").innerHTML = pulse4CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
 	}
