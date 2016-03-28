@@ -494,7 +494,7 @@ function upgradeGen4(){
 		gen4Cost = Math.floor(gen4Cost * 1.5);
 		energyPerSec += 4096;
 		document.getElementById("gen4Level").innerHTML = gen4Level;
-		var gen4CostComma = gen4cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		var gen4CostComma = gen4Cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		document.getElementById("gen4Cost").innerHTML = gen4CostComma;
 		document.getElementById("money").innerHTML = money;
 		checkEnergyPositive();
