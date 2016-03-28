@@ -18,13 +18,20 @@ var autoSell = 0; var autoSellCount = 0;
 var unlockTin = 0; var unlockIron = 0; var unlockLithium = 0; var unlockGold = 0; var unlockDiamond = 0;
 
 function refreshStats(){
-	document.getElementById("iron").innerHTML = iron;
-	document.getElementById("gold").innerHTML = gold;
-	document.getElementById("copper").innerHTML = copper;
-	document.getElementById("tin").innerHTML = tin;
-	document.getElementById("lithium").innerHTML = lithium;
-	document.getElementById("diamond").innerHTML = diamond;
-	document.getElementById("energy").innerHTML = energy;
+	var ironComma = iron.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("iron").innerHTML = ironComma;
+	var goldComma = gold.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("gold").innerHTML = goldComma;
+	var copperComma = copper.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+	document.getElementById("copper").innerHTML = copperComma;
+	var tinComma = tin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("tin").innerHTML = tinComma;
+	var lithiumComma = lithium.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("lithium").innerHTML = lithiumComma;
+	var diamondComma = diamond.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("diamond").innerHTML = diamondComma;
+	var energyComma = energy.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	document.getElementById("energy").innerHTML = energyComma;
 	var moneyComma = money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("money").innerHTML = moneyComma;
 }
