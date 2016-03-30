@@ -748,3 +748,10 @@ window.setInterval(function(){
 	autoSellAll();
 	refreshStats();
 }, 1000);
+
+// Automatically load the savefile if one exists and the page is done with loading
+window.onload = function() {
+    if(localStorage.getItem["save"] !== null) {
+        load();
+    }
+};
