@@ -17,6 +17,13 @@ var energy = 0; var energyPerSec = 0;
 var autoSell = 0; var autoSellCount = 0;
 var unlockTin = 0; var unlockIron = 0; var unlockLithium = 0; var unlockGold = 0; var unlockDiamond = 0;
 
+// Automatically load the savefile if one exists and the page is done with loading
+window.onload = function() {
+    if(localStorage.getItem["save"] !== null) {
+        load();
+    }
+};
+
 function refreshStats(){
 	var ironComma = iron.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById("iron").innerHTML = ironComma;
@@ -748,10 +755,3 @@ window.setInterval(function(){
 	autoSellAll();
 	refreshStats();
 }, 1000);
-
-// Automatically load the savefile if one exists and the page is done with loading
-window.onload = function() {
-    if(localStorage.getItem["save"] !== null) {
-        load();
-    }
-};
