@@ -1,155 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="interface.css" />
-	<script type="text/javascript" src="main.js"></script>
-	<title>Minergy!</title>
-	<link rel="shortcut icon" type="image/png" href="http://vignette4.wikia.nocookie.net/ztreasureisle/images/d/da/GoldOre_Sandstone-icon.png/revision/latest?cb=20100906203517"/>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-75462465-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-</head>
-<body>
-	<?php include_once("analyticstracking.php") ?>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Minergy!</a>
+
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+		<script type="text/javascript" src="main.js"></script>
+		<title>Minergy!</title>
+		<link rel="shortcut icon" type="image/png" href="http://vignette4.wikia.nocookie.net/ztreasureisle/images/d/da/GoldOre_Sandstone-icon.png/revision/latest?cb=20100906203517"/>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-75462465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body class='whiteText' id="background">
+		<?php include_once("analyticstracking.php") ?>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Minergy!</a>
 		    </div>
-		    <div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li id="main" class="active"><a href="#main" onclick="activeMain()">Get More Ore</a></li>
-					<li id="shop"><a href="#shop" onclick="activeShop()">Shop [WIP]</a></li>
-					<li id="stats"><a href="#stats" onclick="activeStats()">Stats [WIP]</a></li>
-					<li id="settings"><a href="#settings" onclick="activeSettings()">Settings [WIP]</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a onclick="save()">Save Game</a></li>
-					<li><a onclick="load()">Load Game</a></li>
-					<li><a onclick="deleteSave()">DELETE SAVE</a></li>
-					<li><a onclick="sourceCode()">Source Code</a></li>
-					<li><a onclick="redditPage()">Reddit Page</a></li>
-				</ul>
-		    </div><!--/.nav-collapse -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+						<li id="main" class="active"><a href="#main" onclick="activeMain()">Get More Ore</a></li>
+						<li id="shop"><a href="#shop" onclick="activeShop()">Shop [WIP]</a></li>
+						<li id="stats"><a href="#stats" onclick="activeStats()">Stats [WIP]</a></li>
+						<li id="settings"><a href="#settings" onclick="activeSettings()">Settings [WIP]</a></li>
+		      </ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
+		          <ul class="dropdown-menu inverse-dropdown">
+								<li><a onclick="save()">Save Game</a></li>
+								<li><a onclick="load()">Load Game</a></li>
+								<li><a onclick="deleteSave()">DELETE SAVE</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a onclick="sourceCode()">Source Code</a></li>
+								<li><a onclick="redditPage()">Reddit Page</a></li>
+		          </ul>
+		        </li>
+					</ul>
+		    </div>
+		  </div>
+		</nav>
+		<ul class="resources mainTabContent">
+			<li><span id="copperNum">30%  Copper: <span id="copper">0</span></span></li>
+			<li><span id="tinNum">20%  Tin: <span id="tin">0</span></span></li>
+			<li><span id="ironNum">20%  Iron: <span id="iron">0</span></span></li>
+			<li><span id="lithiumNum">15%  Lithium: <span id="lithium">0</span></span></li>
+			<li><span id="goldNum">10%  Gold: <span id="gold">0</span></span></li>
+			<li><span id="diamondNum">5%  Diamond: <span id="diamond">0</span></span></li>
+		</ul>
+
+		<div class="container mainTabContent">
+			<div class="row">
+				<div class="col-md-8 left-section">
+					<div class="row ore-section">
+						<div class="col-md-12 ore-clicker">
+							<a onclick="gainOre()" id="oreButton">
+								<img src="http://vignette4.wikia.nocookie.net/ztreasureisle/images/d/da/GoldOre_Sandstone-icon.png/revision/latest?cb=20100906203517" alt="">
+							</a>
+							<h4 id="opc" class="whiteText">You have a chance for <span id="orePerClick">1</span> Ore per click!</h4>
+						</div>
+					</div>
+					<div class="row shop-section">
+						<div class="col-md-6 money-section" id="mainTab">
+							<div class="col-md-12">
+								<button class="btn btn-warning bold" onclick="sellAll()">Click Here to sell all your Ore!</button>
+								<ul>
+									<li><span id="moneyNum">Money: <span id="money">0</span></span></li>
+									<li><span id="energyNum">Energy: <span id="energy">0</span></span></li>
+									<li><span id="energyPerSecBox">Net Energy: <span id="energyPerSec">0</span></span></li>
+									<li><span id="orePerSecBox">Ore Per Second: <span id="orePerSec">0</span></span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 shopTabContent" id="shopTab">
+							<div class="row upgrade">
+								<div class="col-md-6">
+									<p>
+										Plus Ore per Click!
+										<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="Doubles until 32, then adds 16 per upgrade"></span>
+									</p>
+								</div>
+								<div class="col-md-6">
+									<button id="upgradePick" class="btn btn-primary btn-xs bold" onclick="upgradePick()">
+										<span>Cost: <span id="pickCost">500</span></span>
+									</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="unlockTin">
+								<div class="col-md-6">
+									<p>Unlock Tin Mining!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="unlockTinFunction()">Cost: 500</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="unlockIron">
+								<div class="col-md-6">
+									<p>Unlock Iron Mining!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="unlockIronFunction()">Cost: 2,500</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="unlockLithium">
+								<div class="col-md-6">
+									<p>Unlock Lithium Mining!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="unlockLithiumFunction()">Cost: 5,000</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="unlockGold">
+								<div class="col-md-6">
+									<p>Unlock Gold Mining!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="unlockGoldFunction()">Cost: 20,000</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="unlockDiamond">
+								<div class="col-md-6">
+									<p>Unlock Diamond Mining!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="unlockDiamondFunction()">Cost: 100,000</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="upgradeAutoSell">
+								<div class="col-md-6">
+									<p>Buy To Have Your Ores Sold Every Minute!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="upgradeAutoSell()">Cost: 1,000,000</button>
+								</div>
+							</div>
+							<div class="row upgrade" id="winGame">
+								<div class="col-md-6">
+									<p>Click To Win The Game!!!</p>
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-xs bold" onclick="winGame()">Cost: 1,000,000,000</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 upgrade-section">
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Generator!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="8 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen" class="btn btn-primary btn-xs bold" onclick="upgradeGen()">Cost: <span id="genCost">5,000</span></button>
+							Level <span id="genLevel">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Collector Field!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="64 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen2" class="btn btn-primary btn-xs bold" onclick="upgradeGen2()">Cost: <span id="gen2Cost">100,000</span></button>
+							Level <span id="gen2Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Power Station!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="512 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen3" class="btn btn-primary btn-xs bold" onclick="upgradeGen3()">Cost: <span id="gen3Cost">2,000,000</span></button>
+							Level <span id="gen3Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Space Farm!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="4096 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen4" class="btn btn-primary btn-xs bold" onclick="upgradeGen4()">Cost: <span id="gen4Cost">50,000,000</span></button>
+							Level <span id="gen4Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Miner!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="8 Energy Upkeep per Level, 16 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse" class="btn btn-primary btn-xs bold" onclick="upgradePulse()">Cost: <span id="pulseCost">5,000</span></button>
+							Level <span id="pulseLevel">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Blaster!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="64 Energy Upkeep per Level, 128 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse2" class="btn btn-primary btn-xs bold" onclick="upgradePulse2()">Cost: <span id="pulse2Cost">100,000</span></button>
+							Level <span id="pulse2Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Incinerator!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="512 Energy Upkeep per Level, 1024 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse3" class="btn btn-primary btn-xs bold" onclick="upgradePulse3()">Cost: <span id="pulse3Cost">2,000,000</span></button>
+							Level <span id="pulse3Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Destroyer Of Worlds!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="4096 Energy Upkeep per Level, 8192 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse4" class="btn btn-primary btn-xs bold" onclick="upgradePulse4()">Cost: <span id="pulse4Cost">50,000,000</span></button>
+							Level <span id="pulse4Level">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<!--
+
+				// ENERGY UPGRADES
+				<div class="col-md-4">
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Generator!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="8 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen" class="btn btn-primary btn-xs bold" onclick="upgradeGen()">Cost: <span id="genCost">5,000</span></button>
+							Level <span id="genLevel">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Collector Field!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="64 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen2" class="btn btn-primary btn-xs bold" onclick="upgradeGen2()">Cost: <span id="gen2Cost">100,000</span></button>
+							Level <span id="gen2Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Power Station!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="512 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen3" class="btn btn-primary btn-xs bold" onclick="upgradeGen3()">Cost: <span id="gen3Cost">2,000,000</span></button>
+							Level <span id="gen3Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Energy Space Farm!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="4096 Energy per Level per Second"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradeGen4" class="btn btn-primary btn-xs bold" onclick="upgradeGen4()">Cost: <span id="gen4Cost">50,000,000</span></button>
+							Level <span id="gen4Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Miner!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="8 Energy Upkeep per Level, 16 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse" class="btn btn-primary btn-xs bold" onclick="upgradePulse()">Cost: <span id="pulseCost">5,000</span></button>
+							Level <span id="pulseLevel">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Blaster!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="64 Energy Upkeep per Level, 128 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse2" class="btn btn-primary btn-xs bold" onclick="upgradePulse2()">Cost: <span id="pulse2Cost">100,000</span></button>
+							Level <span id="pulse2Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Incinerator!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="512 Energy Upkeep per Level, 1024 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse3" class="btn btn-primary btn-xs bold" onclick="upgradePulse3()">Cost: <span id="pulse3Cost">2,000,000</span></button>
+							Level <span id="pulse3Level">0</span>
+						</div>
+					</div>
+					<div class="row upgrade">
+						<div class="col-md-12">
+							<p>
+								Upgrade Pulse Destroyer Of Worlds!
+								<span class='glyphicon glyphicon-info-sign' data-toggle="tooltip" title="4096 Energy Upkeep per Level, 8192 Ore per Level"></span>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<button id="upgradePulse4" class="btn btn-primary btn-xs bold" onclick="upgradePulse4()">Cost: <span id="pulse4Cost">50,000,000</span></button>
+							Level <span id="pulse4Level">0</span>
+						</div>
+					</div>
+				</div>
+				<div id="statsTab" class="statsTabContent">
+
+				</div>
+				<div id="settingsTab" class="settingsTabContent">
+
+				</div>
+			</div> -->
 		</div>
-    </nav>
-	<div class="containerfluid" id="background">
-	
-	<div id="mainTab" class="mainTabContent">
-		<a onclick="gainOre()" id="oreButton"></a>
-		<h4 id="opc" class="whiteText">You have a chance for <span id="orePerClick">1</span> Ore per click!</h4>
-		<h3>
-			<br />
-			<br />
-			<br />
-			<span id="copperNum">30%  Copper: <span id="copper">0</span></span>
-			<br />
-			<span id="tinNum">20%  Tin: <span id="tin">0</span></span>
-			<br />
-			<span id="ironNum">20%  Iron: <span id="iron">0</span></span>
-			<br />
-			<span id="lithiumNum">15%  Lithium: <span id="lithium">0</span></span>
-			<br />
-			<span id="goldNum">10%  Gold: <span id="gold">0</span></span>
-			<br />
-			<span id="diamondNum">5%  Diamond: <span id="diamond">0</span></span>
-			<br />
-		</h3>
-        <br />
-        <button class="btn-warning bold" onclick="sellAll()">Click Here to sell all your Ore!</button>
-        <br />
-        <h3 class="whiteText">
-            <br />
-            <span id="moneyNum">Money: <span id="money">0</span></span>
-            <br />
-            <span id="energyNum">Energy: <span id="energy">0</span></span>
-            <br />
-            <span id="energyPerSecBox">Net Energy: <span id="energyPerSec">0</span></span>
-            <br />
-            <span id="orePerSecBox">Ore Per Second: <span id="orePerSec">0</span></span>
-            <br />
-            <br />
-            Energy Generator Level: <span id="genLevel">0</span>
-            <br />
-            Energy Collector Field Level: <span id="gen2Level">0</span>
-            <br />
-            Energy Power Station Level: <span id="gen3Level">0</span>
-            <br />
-            Energy Space Farm Level: <span id="gen4Level">0</span>
-            <br />
-            <br />
-            Pulse Miner Level: <span id="pulseLevel">0</span>
-            <br />
-            Pulse Blaster Level: <span id="pulse2Level">0</span>
-            <br />
-            Pulse Incinerator Level: <span id="pulse3Level">0</span>
-            <br />
-            Pulse Destroyer of Worlds Level: <span id="pulse4Level">0</span>
-            <br />
-	</h3>
-    </div>
-    <div id="shopTab" class="whiteText shopTabContent">
-        <button id="upgradePick" class="btn-primary bold" onclick="upgradePick()">Increase Ore per Click! Cost: <span id="pickCost">500</span></button><span class="bold"> Doubles until 32, then adds 16 per upgrade</span>
-        <br />
-        <button id="unlockTin" class="btn-primary bold" onclick="unlockTinFunction()">Unlock Tin Mining! Cost: 500</button>
-        <br />
-        <button id="unlockIron" class="btn-primary bold" onclick="unlockIronFunction()">Unlock Iron Mining! Cost: 2,500</button>
-        <br />
-        <button id="unlockLithium" class="btn-primary bold" onclick="unlockLithiumFunction()">Unlock Lithium Mining! Cost: 5,000</button>
-        <br />
-        <button id="unlockGold" class="btn-primary bold" onclick="unlockGoldFunction()">Unlock Gold Mining! Cost: 20,000</button>
-        <br />
-        <button id="unlockDiamond" class="btn-primary bold" onclick="unlockDiamondFunction()">Unlock Diamond Mining! Cost: 100,000</button>
-        <br />
-        <br />
-        <button id="upgradeGen" class="btn-primary bold" onclick="upgradeGen()">Upgrade Energy Generator! Cost: <span id="genCost">5,000</span></button><span class="bold"> 8 Energy per Level per Second</span>
-        <br />
-        <button id="upgradeGen2" class="btn-primary bold" onclick="upgradeGen2()">Upgrade Energy Collector Field! Cost: <span id="gen2Cost">100,000</span></button><span class="bold"> 64 Energy per Level per Second</span>
-        <br />
-        <button id="upgradeGen3" class="btn-primary bold" onclick="upgradeGen3()">Upgrade Energy Power Station! Cost: <span id="gen3Cost">2,000,000</span></button><span class="bold"> 512 Energy per Level per Second</span>
-        <br />
-        <button id="upgradeGen4" class="btn-primary bold" onclick="upgradeGen4()">Upgrade Energy Space Farm! Cost: <span id="gen4Cost">50,000,000</span></button><span class="bold"> 4096 Energy per Level per Second</span>
-        <br />
-        <br />
-        <button id="upgradePulse" class="btn-primary bold" onclick="upgradePulse()">Upgrade Pulse Miner! Cost: <span id="pulseCost">5,000</span></button><span class="bold"> 8 Energy Upkeep per Level, 16 Ore per Level</span>
-        <br />
-        <button id="upgradePulse2" class="btn-primary bold" onclick="upgradePulse2()">Upgrade Pulse Blaster! Cost: <span id="pulse2Cost">100,000</span></button><span class="bold"> 64 Energy Upkeep per Level, 128 Ore per Level</span>
-        <br />
-        <button id="upgradePulse3" class="btn-primary bold" onclick="upgradePulse3()">Upgrade Pulse Incinerator! Cost: <span id="pulse3Cost">2,000,000</span></button><span class="bold"> 512 Energy Upkeep per Level, 1024 Ore per Level</span>
-        <br />
-        <button id="upgradePulse4" class="btn-primary bold" onclick="upgradePulse4()">Upgrade Pulse Destroyer Of Worlds! Cost: <span id="pulse4Cost">50,000,000</span></button><span class="bold"> 4096 Energy Upkeep per Level, 8192 Ore per Level</span>
-        <br />
-        <br />
-        <button id="upgradeAutoSell" class="btn-primary bold" onclick="upgradeAutoSell()">Buy To Have Your Ores Sold Every Minute! Cost: 1,000,000</button>
-        <br />
-        <br />
-        <button id="winGame" class="btn-primary bold" onclick="winGame()">Click To Win The Game!!! Cost: 1,000,000,000</button>
-        <br />
-    </div>
-    <div id="statsTab" class="statsTabContent">
-    	
-    </div>
-    <div id="settingsTab" class="settingsTabContent">
-    	
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
 	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-</body>
 </html>

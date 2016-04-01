@@ -21,8 +21,9 @@ See [Reddit Page](https://www.reddit.com/r/incremental_games/comments/4b3lzx/ore
 #Contributors
 
 - Sparticle999 (Founder)
-- HazzaLaw (~~Professional Gineau Pig~~ Beta Tester)
+- HazzaLaw (~~Professional Guinea Pig~~ Beta Tester)
 - OrbitalFacePalm9001 (Name Creation)
+- Jeremy-Walton (Updated Interface Layout, Code Cleanup)
 - Your Name Here (What You Helped With)
 
 #Changelog
@@ -38,7 +39,7 @@ alpha 0.6
 
 alpha 0.5
 - Changed energy mechanics
-- Changed pulse mining mechanichs
+- Changed pulse mining mechanics
 
 alpha 0.4
 - Changed name (by OrbitalFacePalm9001)
@@ -50,7 +51,7 @@ alpha 0.3
 
 alpha 0.2
 - Posted to GitHub
-- Transfered all data onto GitHub
+- Transferred all data onto GitHub
 - Edited ReadMe
 
 alpha 0.1
