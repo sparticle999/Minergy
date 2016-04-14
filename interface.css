@@ -1,71 +1,115 @@
 body {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 50px;
 }
 
 #background{
-	background:url(http://static.giantbomb.com/uploads/square_small/18/180391/2425972-fiber_carbon_tiled_pattern_background_vol.11.jpg);
-	height: 100%;
-	width: 100%;
+  background-color: #454545;
 }
 
-.whiteText{
-	color:white;
+.resources {
+  background-color: #222;
+  padding-left: 5px;
+  margin: 0;
 }
 
-#oreButton{
-	background: url(http://img.ctrlv.in/img/16/03/23/56f29f53707fe.png);
-	height: 150px;
-	width: 150px;
-	position: absolute;
-	margin-left: 550px;
-	margin-top: 50px;
-	padding-bottom: 100px;
-	
+.resources li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2em;
+}
 
+.money-section {
+  padding: 10px;
+  text-align: center;
+}
+
+.money-section ul {
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.whiteText {
+  color:white;
+}
+
+.ore-clicker {
+  text-align: center;
+  padding-top: 50px;
 }
 
 a:hover {
-	cursor:pointer;
+  cursor:pointer;
 }
-
-#opc{
-	position: absolute;
-	text-align: center;
-	margin-top: 200px;
-	margin-left: 500px;
-}
-
-
 
 #ironNum{
-	color: #808080;
+  color: #808080;
 }
 #goldNum{
-	color: #D4AF37;
+  color: #D4AF37;
 }
 #copperNum{
-	color: #cd7f32;
+  color: #cd7f32;
 }
 #tinNum{
-	color: darkgrey;
+  color: darkgrey;
 }
 #lithiumNum{
-	color: #A9A9A9;
+  color: #A9A9A9;
 }
 #diamondNum{
-	color: lightblue;
+  color: lightblue;
 }
 #moneyNum{
-	color: #458B00;
+  color: #458B00;
 }
 #energyNum{
-	color: #b3b300;
+  color: #b3b300;
 }
 .bold{
-	font-weight: bold;
+  font-weight: bold;
+}
+
+.inverse-dropdown {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.inverse-dropdown > .divider {
+  background-color: #000;
+}
+
+.inverse-dropdown > li > a {
+  color: #999;
+}
+
+.inverse-dropdown > li > a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.upgrade {
+  padding: 2px 10px;
+  clear: both;
+  text-align: center;
+}
+
+.upgrade-section {
+  padding-top: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.left-section {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.ore-section, .upgrade-section, .shop-section {
+  padding: 10px;
+  margin: 0px;
 }
