@@ -303,8 +303,8 @@ function redditPage(){
 }
 
 function unlockTinFunction(){
-	if(money > 500){
-		money -= 500;
+	if(money > 250){
+		money -= 250;
 		unlockTin = 1;
 		document.getElementById("unlockTin").className += " hidden";
 		refreshStats();
