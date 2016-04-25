@@ -76,68 +76,68 @@ function checkEnergyPositive(){
 
 function activeMain() {
     "use strict";
-    document.getElementById("mainTab").style.color = "#ffffff";
-    document.getElementById("statsTab").style.color = "#414449";
-    document.getElementById("settingsTab").style.color = "#414449";
-    document.getElementById("shopTab").style.color = "#414449";
+    //document.getElementById("mainTab").style.color = "#ffffff";
+    //document.getElementById("statsTab").style.color = "#414449";
+    //document.getElementById("settingsTab").style.color = "#414449";
+    //document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "active";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "";
     document.getElementById("settings").className = "";
-    document.getElementById("mainTab").style.display = block;
-    document.getElementById("shopTab").style.display = none;
-    document.getElementById("statsTab").style.display = none;
-    document.getElementById("settingsTab").style.display = none;
+    //document.getElementById("mainTab").style.display = block;
+    //document.getElementById("shopTab").style.display = none;
+    //document.getElementById("statsTab").style.display = none;
+    //document.getElementById("settingsTab").style.display = none;
     
 }
 
 function activeStats() {
     "use strict";
-    document.getElementById("mainTab").style.color = "#414449";
-    document.getElementById("statsTab").style.color = "#ffffff";
-    document.getElementById("settingsTab").style.color = "#414449";
-    document.getElementById("shopTab").style.color = "#414449";
+    //document.getElementById("mainTab").style.color = "#414449";
+    //document.getElementById("statsTab").style.color = "#ffffff";
+    //document.getElementById("settingsTab").style.color = "#414449";
+    //document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "active";
     document.getElementById("settings").className = "";
-    document.getElementById("mainTab").style.display = none;
-    document.getElementById("shopTab").style.display = none;
-    document.getElementById("statsTab").style.display = block;
-    document.getElementById("settingsTab").style.display = none;
+    //document.getElementById("mainTab").style.display = none;
+    //document.getElementById("shopTab").style.display = none;
+    //document.getElementById("statsTab").style.display = block;
+    //document.getElementById("settingsTab").style.display = none;
 
 }
 
 function activeSettings() {
     "use strict";
-    document.getElementById("mainTab").style.color = "#414449";
-    document.getElementById("statsTab").style.color = "#414449";
-    document.getElementById("settingsTab").style.color = "#ffffff";
-    document.getElementById("shopTab").style.color = "#414449";
+    //document.getElementById("mainTab").style.color = "#414449";
+    //document.getElementById("statsTab").style.color = "#414449";
+    //document.getElementById("settingsTab").style.color = "#ffffff";
+    //document.getElementById("shopTab").style.color = "#414449";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "";
     document.getElementById("stats").className = "";
     document.getElementById("settings").className = "active";
-    document.getElementById("mainTab").style.display = none;
-    document.getElementById("shopTab").style.display = none;
-    document.getElementById("statsTab").style.display = none;
-    document.getElementById("settingsTab").style.display = block;
+    //document.getElementById("mainTab").style.display = none;
+    //document.getElementById("shopTab").style.display = none;
+    //document.getElementById("statsTab").style.display = none;
+    //document.getElementById("settingsTab").style.display = block;
 }
 
 function activeShop() {
     "use strict";
-    document.getElementById("mainTab").style.color = "#414449";
-    document.getElementById("statsTab").style.color = "#414449";
-    document.getElementById("settingsTab").style.color = "#414449";
-    document.getElementById("shopTab").style.color = "#ffffff";
+    //document.getElementById("mainTab").style.color = "#414449";
+    //document.getElementById("statsTab").style.color = "#414449";
+    //document.getElementById("settingsTab").style.color = "#414449";
+    //document.getElementById("shopTab").style.color = "#ffffff";
     document.getElementById("main").className = "";
     document.getElementById("shop").className = "active";
     document.getElementById("stats").className = "";
     document.getElementById("settings").className = "";
-    document.getElementById("mainTab").style.display = none;
-    document.getElementById("shopTab").style.display = block;
-    document.getElementById("statsTab").style.display = none;
-    document.getElementById("settingsTab").style.display = none;
+    //document.getElementById("mainTab").style.display = none;
+    //document.getElementById("shopTab").style.display = block;
+    //document.getElementById("statsTab").style.display = none;
+    //document.getElementById("settingsTab").style.display = none;
 }
 
 function save(){
