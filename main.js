@@ -303,7 +303,7 @@ function redditPage(){
 }
 
 function unlockTinFunction(){
-	if(money > 250){
+	if(money >= 250){
 		money -= 250;
 		unlockTin = 1;
 		document.getElementById("unlockTin").className += " hidden";
@@ -312,7 +312,7 @@ function unlockTinFunction(){
 }
 
 function unlockIronFunction(){
-	if(money > 2500){
+	if(money >= 2500){
 		money -= 2500;
 		unlockIron = 1;
 		document.getElementById("unlockIron").className += " hidden";
@@ -321,7 +321,7 @@ function unlockIronFunction(){
 }
 
 function unlockLithiumFunction(){
-	if(money > 5000){
+	if(money >= 5000){
 		money -= 5000;
 		unlockLithium = 1;
 		document.getElementById("unlockLithium").className += " hidden";
@@ -330,7 +330,7 @@ function unlockLithiumFunction(){
 }
 
 function unlockGoldFunction(){
-	if(money > 20000){
+	if(money >= 20000){
 		money -= 20000;
 		unlockGold = 1;
 		document.getElementById("unlockGold").className += " hidden";
@@ -339,7 +339,7 @@ function unlockGoldFunction(){
 }
 
 function unlockDiamondFunction(){
-	if(money > 100000){
+	if(money >= 100000){
 		money -= 100000;
 		unlockDiamond = 1;
 		document.getElementById("unlockDiamond").className += " hidden";
@@ -383,7 +383,7 @@ function gainOre(){
 }
 
 function pulseMine(){
-	if(energy > (pulseLevel * 8) && pulseLevel > 0){
+	if(energy >= (pulseLevel * 8) && pulseLevel > 0){
 		energy = energy - (pulseLevel * 8);
 		for (i=1;i<=(16 * pulseLevel);i++) {
 		oreType2 = Math.floor(Math.random() * 100);
@@ -460,7 +460,7 @@ function sellAll(){
     refreshStats();
 }
 function upgradePick(){
-	if(money > pickCost){
+	if(money >= pickCost){
 		money -= pickCost;
 		if(orePerClick > 31){
 		    orePerClick = orePerClick + 16;
@@ -477,7 +477,7 @@ function upgradePick(){
 }
 
 function upgradeGen(){
-	if(money > genCost){
+	if(money >= genCost){
 		money -= genCost;
 		genLevel += 1;
 		genCost = Math.floor(genCost * 1.5);
@@ -492,7 +492,7 @@ function upgradeGen(){
 }
 
 function upgradeGen2(){
-	if(money > gen2Cost){
+	if(money >= gen2Cost){
 		money -= gen2Cost;
 		gen2Level += 1;
 		gen2Cost = Math.floor(gen2Cost * 1.5);
@@ -506,7 +506,7 @@ function upgradeGen2(){
 }
 
 function upgradeGen3(){
-	if(money > gen3Cost){
+	if(money >= gen3Cost){
 		money -= gen3Cost;
 		gen3Level += 1;
 		gen3Cost = Math.floor(gen3Cost * 1.5);
@@ -520,7 +520,7 @@ function upgradeGen3(){
 }
 
 function upgradeGen4(){
-	if(money > gen4Cost){
+	if(money >= gen4Cost){
 		money -= gen4Cost;
 		gen4Level += 1;
 		gen4Cost = Math.floor(gen4Cost * 1.5);
@@ -534,7 +534,7 @@ function upgradeGen4(){
 }
 
 function upgradePulse(){
-	if(money > pulseCost){
+	if(money >= pulseCost){
 		money -= pulseCost;
 		pulseLevel += 1;
 		pulseCost = Math.floor(pulseCost * 1.5);
@@ -550,7 +550,7 @@ function upgradePulse(){
 }
 
 function upgradePulse2(){
-	if(money > pulse2Cost){
+	if(money >= pulse2Cost){
 		money -= pulse2Cost;
 		pulse2Level += 1;
 		pulse2Cost = Math.floor(pulse2Cost * 1.5);
@@ -566,7 +566,7 @@ function upgradePulse2(){
 }
 
 function upgradePulse3(){
-	if(money > pulse3Cost){
+	if(money >= pulse3Cost){
 		money -= pulse3Cost;
 		pulse3Level += 1;
 		pulse3Cost = Math.floor(pulse3Cost * 1.5);
@@ -582,7 +582,7 @@ function upgradePulse3(){
 }
 
 function upgradePulse4(){
-	if(money > pulse4Cost){
+	if(money >= pulse4Cost){
 		money -= pulse4Cost;
 		pulse4Level += 1;
 		pulse4Cost = Math.floor(pulse4Cost * 1.5);
